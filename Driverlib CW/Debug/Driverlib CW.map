@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v21.6.2                     
 ******************************************************************************
->> Linked Tue Jul 14 10:26:43 2026
+>> Linked Tue Jul 14 10:50:44 2026
 
 OUTPUT FILE NAME:   <Driverlib CW.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs_mpu"  address: 00004030
@@ -80,7 +80,7 @@ MEMORY CONFIGURATION
   INT53                 0000fffa   00000002  00000002  00000000  RWIX
   INT54                 0000fffc   00000002  00000002  00000000  RWIX
   RESET                 0000fffe   00000002  00000002  00000000  RWIX
-  FRAM2                 00010000   00033ff8  00000640  000339b8  RWIX
+  FRAM2                 00010000   00033ff8  00000814  000337e4  RWIX
 
 
 SECTION ALLOCATION MAP
@@ -273,54 +273,58 @@ SYSNMI     0    0000fffc    00000002
                   0000409c    0000000a     main.obj (.const:$P$T2$3)
                   000040a6    0000000a     main.obj (.const:$P$T3$4)
 
-.text      0    00010000    00000640     
-                  00010000    000000d2     main.obj (.text:Init_ADC)
-                  000100d2    0000009a     eusci_a_uart.obj (.text:EUSCI_A_UART_init)
-                  0001016c    00000098     adc12_b.obj (.text:ADC12_B_init)
-                  00010204    00000076     rts430x_lc_rd_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
-                  0001027a    00000072     gpio.obj (.text:GPIO_setAsPeripheralModuleFunctionInputPin)
-                  000102ec    00000068     main.obj (.text:main)
-                  00010354    00000066     main.obj (.text:UART_putU16)
-                  000103ba    00000054     main.obj (.text:Init_UART)
-                  0001040e    00000054     rts430x_lc_rd_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
-                  00010462    00000050     adc12_b.obj (.text:ADC12_B_configureMemory)
-                  000104b2    0000003e     adc12_b.obj (.text:ADC12_B_startConversion)
-                  000104f0    0000002c     MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib : mpu_init.o (.text:__mpu_init)
-                  0001051c    00000026     adc12_b.obj (.text:ADC12_B_setupSamplingTimer)
-                  00010542    00000024     adc12_b.obj (.text:ADC12_B_enableInterrupt)
-                  00010566    00000022     main.obj (.text:Init_GPIO)
-                  00010588    00000016     wdt_a.obj (.text:WDT_A_hold)
-                  0001059e    00000016     rts430x_lc_rd_eabi.lib : div16u.asm.obj (.text)
-                  000105b4    00000014     adc12_b.obj (.text:ADC12_B_clearInterrupt)
-                  000105c8    00000014     rts430x_lc_rd_eabi.lib : memcpy.c.obj (.text:memcpy)
-                  000105dc    00000012     main.obj (.text:UART_puts)
-                  000105ee    00000012     rts430x_lc_rd_eabi.lib : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
-                  00010600    0000000e     adc12_b.obj (.text:ADC12_B_getResults)
-                  0001060e    0000000e     main.obj (.text:UART_putc)
-                  0001061c    0000000c     adc12_b.obj (.text:ADC12_B_enable)
-                  00010628    00000006     eusci_a_uart.obj (.text:EUSCI_A_UART_enable)
-                  0001062e    00000006     pmm.obj (.text:PMM_unlockLPM5)
-                  00010634    00000006     rts430x_lc_rd_eabi.lib : exit.c.obj (.text:abort)
-                  0001063a    00000004                            : pre_init.c.obj (.text:_system_pre_init)
-                  0001063e    00000002                            : startup.c.obj (.text:_system_post_cinit)
+.text      0    00010000    00000814     
+                  00010000    00000140     cs.obj (.text:CS_setDCOFreq)
+                  00010140    000000d2     main.obj (.text:Init_ADC)
+                  00010212    0000009a     eusci_a_uart.obj (.text:EUSCI_A_UART_init)
+                  000102ac    00000098     adc12_b.obj (.text:ADC12_B_init)
+                  00010344    00000076     rts430x_lc_rd_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
+                  000103ba    00000072     gpio.obj (.text:GPIO_setAsPeripheralModuleFunctionInputPin)
+                  0001042c    0000006c     main.obj (.text:main)
+                  00010498    0000006a     cs.obj (.text:CS_initClockSignal)
+                  00010502    00000066     main.obj (.text:UART_putU16)
+                  00010568    00000054     main.obj (.text:Init_UART)
+                  000105bc    00000054     rts430x_lc_rd_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
+                  00010610    00000050     adc12_b.obj (.text:ADC12_B_configureMemory)
+                  00010660    0000003e     adc12_b.obj (.text:ADC12_B_startConversion)
+                  0001069e    0000002c     MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib : mpu_init.o (.text:__mpu_init)
+                  000106ca    00000026     adc12_b.obj (.text:ADC12_B_setupSamplingTimer)
+                  000106f0    00000026     main.obj (.text:Init_Clock)
+                  00010716    00000024     adc12_b.obj (.text:ADC12_B_enableInterrupt)
+                  0001073a    00000022     main.obj (.text:Init_GPIO)
+                  0001075c    00000016     wdt_a.obj (.text:WDT_A_hold)
+                  00010772    00000016     rts430x_lc_rd_eabi.lib : div16u.asm.obj (.text)
+                  00010788    00000014     adc12_b.obj (.text:ADC12_B_clearInterrupt)
+                  0001079c    00000014     rts430x_lc_rd_eabi.lib : memcpy.c.obj (.text:memcpy)
+                  000107b0    00000012     main.obj (.text:UART_puts)
+                  000107c2    00000012     rts430x_lc_rd_eabi.lib : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  000107d4    0000000e     adc12_b.obj (.text:ADC12_B_getResults)
+                  000107e2    0000000e     main.obj (.text:UART_putc)
+                  000107f0    0000000c     adc12_b.obj (.text:ADC12_B_enable)
+                  000107fc    00000006     eusci_a_uart.obj (.text:EUSCI_A_UART_enable)
+                  00010802    00000006     pmm.obj (.text:PMM_unlockLPM5)
+                  00010808    00000006     rts430x_lc_rd_eabi.lib : exit.c.obj (.text:abort)
+                  0001080e    00000004                            : pre_init.c.obj (.text:_system_pre_init)
+                  00010812    00000002                            : startup.c.obj (.text:_system_post_cinit)
 
 MODULE SUMMARY
 
        Module                       code   ro data   rw data
        ------                       ----   -------   -------
     .\
-       main.obj                     614    62        4      
+       main.obj                     656    62        4      
     +--+----------------------------+------+---------+---------+
-       Total:                       614    62        4      
+       Total:                       656    62        4      
                                                             
     .\driverlib\MSP430FR5xx_6xx\
+       cs.obj                       426    0         0      
        adc12_b.obj                  414    0         0      
        eusci_a_uart.obj             160    0         0      
        gpio.obj                     114    28        0      
        wdt_a.obj                    22     0         0      
        pmm.obj                      6      0         0      
     +--+----------------------------+------+---------+---------+
-       Total:                       716    28        0      
+       Total:                       1142   28        0      
                                                             
     C:\ti\ccs2100\ccs\ccs_base\msp430\lib\FR59xx\MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib
        mpu_init.o                   44     0         0      
@@ -380,7 +384,7 @@ MODULE SUMMARY
        Stack:                       0      0         160    
        Linker Generated:            0      23        0      
     +--+----------------------------+------+---------+---------+
-       Grand Total:                 1688   187       164    
+       Grand Total:                 2156   187       164    
 
 
 LINKER GENERATED COPY TABLES
@@ -632,14 +636,14 @@ address   name
 00000873  ADC12MEM9_H                               
 00000872  ADC12MEM9_L                               
 00004000  ADC12_B_ISR                               
-000105b4  ADC12_B_clearInterrupt                    
-00010462  ADC12_B_configureMemory                   
-0001061c  ADC12_B_enable                            
-00010542  ADC12_B_enableInterrupt                   
-00010600  ADC12_B_getResults                        
-0001016c  ADC12_B_init                              
-0001051c  ADC12_B_setupSamplingTimer                
-000104b2  ADC12_B_startConversion                   
+00010788  ADC12_B_clearInterrupt                    
+00010610  ADC12_B_configureMemory                   
+000107f0  ADC12_B_enable                            
+00010716  ADC12_B_enableInterrupt                   
+000107d4  ADC12_B_getResults                        
+000102ac  ADC12_B_init                              
+000106ca  ADC12_B_setupSamplingTimer                
+00010660  ADC12_B_startConversion                   
 000009c0  AESACTL0                                  
 000009c1  AESACTL0_H                                
 000009c0  AESACTL0_L                                
@@ -670,7 +674,7 @@ address   name
 000004bc  BIN2BCD                                   
 000004bd  BIN2BCD_H                                 
 000004bc  BIN2BCD_L                                 
-00010634  C$$EXIT                                   
+00010808  C$$EXIT                                   
 0000043e  CAPTIO0CTL                                
 0000043f  CAPTIO0CTL_H                              
 0000043e  CAPTIO0CTL_L                              
@@ -764,6 +768,8 @@ address   name
 0000016c  CSCTL6                                    
 0000016d  CSCTL6_H                                  
 0000016c  CSCTL6_L                                  
+00010498  CS_initClockSignal                        
+00010000  CS_setDCOFreq                             
 00000510  DMA0CTL                                   
 00000511  DMA0CTL_H                                 
 00000510  DMA0CTL_L                                 
@@ -851,8 +857,8 @@ address   name
 0000050e  DMAIV                                     
 0000050f  DMAIV_H                                   
 0000050e  DMAIV_L                                   
-00010628  EUSCI_A_UART_enable                       
-000100d2  EUSCI_A_UART_init                         
+000107fc  EUSCI_A_UART_enable                       
+00010212  EUSCI_A_UART_init                         
 00000140  FRCTL0                                    
 00000141  FRCTL0_H                                  
 00000140  FRCTL0_L                                  
@@ -862,12 +868,13 @@ address   name
 00000146  GCCTL1                                    
 00000147  GCCTL1_H                                  
 00000146  GCCTL1_L                                  
-0001027a  GPIO_setAsPeripheralModuleFunctionInputPin
+000103ba  GPIO_setAsPeripheralModuleFunctionInputPin
 00001c00  IFI_result                                
 00001c02  IFQ_result                                
-00010000  Init_ADC                                  
-00010566  Init_GPIO                                 
-000103ba  Init_UART                                 
+00010140  Init_ADC                                  
+000106f0  Init_Clock                                
+0001073a  Init_GPIO                                 
+00010568  Init_UART                                 
 00000a80  LEACAP                                    
 00000a82  LEACAPH                                   
 00000a80  LEACAPL                                   
@@ -1300,7 +1307,7 @@ address   name
 0000012a  PMMIFG                                    
 0000012b  PMMIFG_H                                  
 0000012a  PMMIFG_L                                  
-0001062e  PMM_unlockLPM5                            
+00010802  PMM_unlockLPM5                            
 00000158  RCCTL0                                    
 00000159  RCCTL0_H                                  
 00000158  RCCTL0_L                                  
@@ -1961,7 +1968,7 @@ address   name
 0000015c  WDTCTL                                    
 0000015d  WDTCTL_H                                  
 0000015c  WDTCTL_L                                  
-00010588  WDT_A_hold                                
+0001075c  WDT_A_hold                                
 00002c00  __STACK_END                               
 000000a0  __STACK_SIZE                              
 000040c0  __TI_CINIT_Base                           
@@ -1970,9 +1977,9 @@ address   name
 000040b0  __TI_Handler_Table_Base                   
 000040b8  __TI_Handler_Table_Limit                  
 00004050  __TI_ISR_TRAP                             
-0001040e  __TI_auto_init_nobinit_nopinit_hold_wdt   
-00010204  __TI_decompress_lzss                      
-000105ee  __TI_decompress_none                      
+000105bc  __TI_auto_init_nobinit_nopinit_hold_wdt   
+00010344  __TI_decompress_lzss                      
+000107c2  __TI_decompress_none                      
 0000ffb4  __TI_int18                                
 0000ffb6  __TI_int19                                
 0000ffb8  __TI_int20                                
@@ -2015,21 +2022,21 @@ ffffffff  __TI_prof_data_size
 ffffffff  __TI_prof_data_start                      
 ffffffff  __c_args__                                
 00000001  __mpu_enable                              
-000104f0  __mpu_init                                
-0001059e  __mspabi_divu                             
-0001059e  __mspabi_remu                             
+0001069e  __mpu_init                                
+00010772  __mspabi_divu                             
+00010772  __mspabi_remu                             
 00004030  _c_int00_noargs_mpu                       
 0000fffe  _reset_vector                             
 00002b60  _stack                                    
-0001063e  _system_post_cinit                        
-0001063a  _system_pre_init                          
-00010634  abort                                     
+00010812  _system_post_cinit                        
+0001080e  _system_pre_init                          
+00010808  abort                                     
 00004000  fram_ipe_end                              
 00004000  fram_ipe_start                            
 00004000  fram_rw_start                             
 00004000  fram_rx_start                             
-000102ec  main                                      
-000105c8  memcpy                                    
+0001042c  main                                      
+0001079c  memcpy                                    
 0000a501  mpu_ctl0_value                            
 00001513  mpu_sam_value                             
 00000400  mpu_segment_border1                       
@@ -3642,37 +3649,40 @@ address   name
 0000fffa  __TI_int53                                
 0000fffc  __TI_int54                                
 0000fffe  _reset_vector                             
-00010000  Init_ADC                                  
-000100d2  EUSCI_A_UART_init                         
-0001016c  ADC12_B_init                              
-00010204  __TI_decompress_lzss                      
-0001027a  GPIO_setAsPeripheralModuleFunctionInputPin
-000102ec  main                                      
-000103ba  Init_UART                                 
-0001040e  __TI_auto_init_nobinit_nopinit_hold_wdt   
-00010462  ADC12_B_configureMemory                   
-000104b2  ADC12_B_startConversion                   
-000104f0  __mpu_init                                
-0001051c  ADC12_B_setupSamplingTimer                
-00010542  ADC12_B_enableInterrupt                   
-00010566  Init_GPIO                                 
-00010588  WDT_A_hold                                
-0001059e  __mspabi_divu                             
-0001059e  __mspabi_remu                             
-000105b4  ADC12_B_clearInterrupt                    
-000105c8  memcpy                                    
-000105ee  __TI_decompress_none                      
-00010600  ADC12_B_getResults                        
-0001061c  ADC12_B_enable                            
-00010628  EUSCI_A_UART_enable                       
-0001062e  PMM_unlockLPM5                            
-00010634  C$$EXIT                                   
-00010634  abort                                     
-0001063a  _system_pre_init                          
-0001063e  _system_post_cinit                        
+00010000  CS_setDCOFreq                             
+00010140  Init_ADC                                  
+00010212  EUSCI_A_UART_init                         
+000102ac  ADC12_B_init                              
+00010344  __TI_decompress_lzss                      
+000103ba  GPIO_setAsPeripheralModuleFunctionInputPin
+0001042c  main                                      
+00010498  CS_initClockSignal                        
+00010568  Init_UART                                 
+000105bc  __TI_auto_init_nobinit_nopinit_hold_wdt   
+00010610  ADC12_B_configureMemory                   
+00010660  ADC12_B_startConversion                   
+0001069e  __mpu_init                                
+000106ca  ADC12_B_setupSamplingTimer                
+000106f0  Init_Clock                                
+00010716  ADC12_B_enableInterrupt                   
+0001073a  Init_GPIO                                 
+0001075c  WDT_A_hold                                
+00010772  __mspabi_divu                             
+00010772  __mspabi_remu                             
+00010788  ADC12_B_clearInterrupt                    
+0001079c  memcpy                                    
+000107c2  __TI_decompress_none                      
+000107d4  ADC12_B_getResults                        
+000107f0  ADC12_B_enable                            
+000107fc  EUSCI_A_UART_enable                       
+00010802  PMM_unlockLPM5                            
+00010808  C$$EXIT                                   
+00010808  abort                                     
+0001080e  _system_pre_init                          
+00010812  _system_post_cinit                        
 ffffffff  __TI_pprof_out_hndl                       
 ffffffff  __TI_prof_data_size                       
 ffffffff  __TI_prof_data_start                      
 ffffffff  __c_args__                                
 
-[1634 symbols]
+[1637 symbols]
