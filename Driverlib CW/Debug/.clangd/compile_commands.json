@@ -1,182 +1,182 @@
 [
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/adc12_b.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/adc12_b.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/aes256.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/aes256.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/comp_e.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/comp_e.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/crc.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/crc.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/crc32.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/crc32.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/cs.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/cs.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/dma.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/dma.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/esi.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/esi.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/eusci_a_spi.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/eusci_a_spi.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/eusci_a_uart.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/eusci_a_uart.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/eusci_b_i2c.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/eusci_b_i2c.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/eusci_b_spi.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/eusci_b_spi.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/framctl.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/framctl.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/framctl_a.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/framctl_a.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/gpio.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/gpio.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/hspll.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/hspll.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/lcd_c.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/lcd_c.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/mpu.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/mpu.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/mpy32.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/mpy32.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/mtif.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/mtif.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/pmm.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/pmm.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/ram.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/ram.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/ref_a.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/ref_a.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/rtc_b.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/rtc_b.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/rtc_c.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/rtc_c.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/saph.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/saph.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/saph_a.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/saph_a.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/sdhs.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/sdhs.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/sfr.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/sfr.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/sysctl.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/sysctl.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/timer_a.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/timer_a.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/timer_b.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/timer_b.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/tlv.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/tlv.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/uups.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/uups.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx/wdt_a.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx/wdt_a.c"
    },
    {
-      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/radar-project-main/Driverlib CW/main.c"
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/main.c"
    }
 ]
