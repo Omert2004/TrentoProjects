@@ -25,13 +25,20 @@ def connect_serial(event):
     global ser
 
     try:
+        # If not connected, try to connect
         if ser is None or not ser.is_open:
             ser = serial.Serial(PORT, BAUD, timeout=1)
-            button.label.set_text("Connected")
+            button.label.set_text("Disconnect")  # Change label to indicate next action
             print(f"Connected to {PORT}")
+            
+        # If already connected, disconnect
+        else:
+            ser.close()
+            button.label.set_text("Connect COM") # Revert label
+            print(f"Disconnected from {PORT}")
 
     except serial.SerialException as e:
-        print(f"Connection failed: {e}")
+        print(f"Connection error: {e}")
         button.label.set_text("Failed")
 
 

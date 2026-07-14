@@ -55,6 +55,8 @@ main.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/Tre
 main.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/eusci_b_spi.h
 main.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/sdhs.h
 main.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/crc.h
+main.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib\ CW/inc/radar_configuration.h
+main.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/driverlib.h
 
 ../main.c:
 
@@ -165,4 +167,8 @@ C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProject
 C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/sdhs.h:
 
 C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/crc.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib\ CW/inc/radar_configuration.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/driverlib.h:
 

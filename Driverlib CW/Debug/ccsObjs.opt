@@ -34,6 +34,8 @@
 "./driverlib/MSP430FR5xx_6xx/tlv.obj"
 "./driverlib/MSP430FR5xx_6xx/uups.obj"
 "./driverlib/MSP430FR5xx_6xx/wdt_a.obj"
+"./src/STFT.obj"
+"./src/radar_configuration.obj"
 "../lnk_msp430fr5994.cmd"
 -llibmpu_init.a
 -llibmath.a
