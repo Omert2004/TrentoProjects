@@ -45,8 +45,8 @@
 //******************************************************************************
 // Globals
 //******************************************************************************
-volatile uint16_t IFI_result = 0;
-volatile uint16_t IFQ_result = 0;
+volatile int16_t IFI_result = 0;
+volatile int16_t IFQ_result = 0;
 
 //******************************************************************************
 // Minimal UART helpers (blocking, no printf/retargeting needed)

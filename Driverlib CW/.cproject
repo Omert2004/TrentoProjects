@@ -53,6 +53,7 @@
                                     <listOptionValue value="${PROJECT_ROOT}"/>
                                     <listOptionValue value="${PROJECT_ROOT}/driverlib/MSP430FR5xx_6xx"/>
                                     <listOptionValue value="${CG_TOOL_ROOT}/include"/>
+                                    <listOptionValue value="C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/Driverlib CW/inc"/>
                                 </option>
                                 <option id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.ADVICE__POWER.610198423" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.ADVICE__POWER" value="&quot;none&quot;" valueType="string"/>
                             </tool>
