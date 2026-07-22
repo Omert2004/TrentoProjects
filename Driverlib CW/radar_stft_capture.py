@@ -42,6 +42,11 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Button
 from scipy.io import savemat
 
+import struct
+
+SYNC1, SYNC2 = 0xAA, 0x55
+FRAME_BODY_SIZE = 4  # IFI (u16 LE) + IFQ (u16 LE)
+
 
 def parse_args():
     p = argparse.ArgumentParser(description="Reproduce the thesis STFT.c pipeline on data streamed from a COM port.")
@@ -85,18 +90,20 @@ class SerialManager:
         plt.gcf().canvas.draw_idle()
 
 
-def read_sample(ser):
-    line = ser.readline().decode("ascii", errors="ignore").strip()
-    if not line or "," not in line:
-        return None
-    parts = line.split(",")
-    if len(parts) != 2:
-        return None
-    try:
-        return int(parts[0]), int(parts[1])
-    except ValueError:
-        return None  # also catches the one-time "IFI,IFQ" header line the firmware sends at boot
 
+def read_sample(ser):
+    """Reads one binary frame: [0xAA][0x55][IFI_lo][IFI_hi][IFQ_lo][IFQ_hi]."""
+    b = ser.read(1)
+    if not b or b[0] != SYNC1:
+        return None
+    b = ser.read(1)
+    if not b or b[0] != SYNC2:
+        return None
+    body = ser.read(FRAME_BODY_SIZE)
+    if len(body) != FRAME_BODY_SIZE:
+        return None
+    ifi, ifq = struct.unpack("<HH", body)
+    return ifi, ifq
 
 def compute_segment(i_win, q_win, window, half_scale):
     """Mirrors STFT_compute_next_segment() in STFT.c."""

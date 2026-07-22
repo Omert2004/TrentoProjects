@@ -40,30 +40,17 @@ int main(void)
 
     __enable_interrupt();
 
-    UART_puts("IFI,IFQ\r\n");
-
     while (1)
     {
-        // One pass through the sequence: MEM0 (IFI) then MEM1 (IFQ)
         ADC12_B_startConversion(ADC12_B_BASE, ADC12_B_MEMORY_0,
                                  ADC12_B_SEQOFCHANNELS);
 
         __bis_SR_register(LPM0_bits + GIE);   // sleep until ISR wakes us
 
-        // Send the parsed results out the real UART pin (P2.0)
-        UART_putU16(IFI_result);
-        UART_putc(',');
-        UART_putU16(IFQ_result);
-        UART_puts("\r\n");
+        UART_putFrame((uint16_t)IFI_result, (uint16_t)IFQ_result);
 
-        // Rate budget @ 8 MHz / 115200 baud:
-        //   - a line like "4095,4095\r\n" is ~11 bytes -> ~0.95 ms to send
-        //   - ADC sample+hold+convert for both channels is a few tens of us
-        //   - this delay tops the loop up to ~2 ms total -> ~500 sample-pairs/sec
-        // Well under the ~1000 lines/sec ceiling 115200 baud allows, leaving
-        // headroom. Lower this further (or remove it) to push the rate up,
-        // but don't go so low that lines start colliding on the wire.
-        __delay_cycles(8000);
+        // No __delay_cycles needed: UART_putc's blocking TX loop already
+        // paces the sample rate to what 115200 baud can carry.
     }
 }
 

@@ -55,6 +55,20 @@ void UART_putU16(uint16_t val)
 }
 
 //******************************************************************************
+// Binary frame helper (replaces ASCII CSV for higher throughput)
+//******************************************************************************
+// Frame (6 bytes): [0xAA][0x55][IFI_lo][IFI_hi][IFQ_lo][IFQ_hi], little-endian
+void UART_putFrame(uint16_t ifi, uint16_t ifq)
+{
+    UART_putc(0xAA);
+    UART_putc(0x55);
+    UART_putc((uint8_t)(ifi & 0xFF));
+    UART_putc((uint8_t)((ifi >> 8) & 0xFF));
+    UART_putc((uint8_t)(ifq & 0xFF));
+    UART_putc((uint8_t)((ifq >> 8) & 0xFF));
+}
+
+//******************************************************************************
 // Init Functions
 //******************************************************************************
 void Init_Clock(void)
