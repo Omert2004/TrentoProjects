@@ -104,10 +104,6 @@ void Init_GPIO(void)
 
 void Init_UART(void)
 {
-    // Standard TI baud-rate-table entry for an 8 MHz BRCLK -> 115200 baud
-    // (clockPrescalar=4, firstModReg(UCBRFx)=5, secondModReg(UCBRSx)=0x55,
-    // regular oversampling mode - 8MHz/115200 = 69.4 clocks/bit, comfortably
-    // inside the accurate range, unlike the old 1MHz/115200 combination).
     EUSCI_A_UART_initParam uartConfig = {0};
     uartConfig.selectClockSource = EUSCI_A_UART_CLOCKSOURCE_SMCLK;
     uartConfig.clockPrescalar    = 4;

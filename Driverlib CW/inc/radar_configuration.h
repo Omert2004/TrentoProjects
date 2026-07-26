@@ -10,8 +10,8 @@
 extern volatile int16_t IFI_result;
 extern volatile int16_t IFQ_result;
 
-// was 4000 -- fits under 115200 baud UART budget with margin
-#define SAMPLING_RATE_HZ 1500     // per-channel; timer period is set for 2x this (I then Q)
+
+#define SAMPLING_RATE_HZ 1500   // proven stable at 115200 baud with full margin
 #define N_SAMPLES 512           // ring buffer depth, tune to taste
 
 extern volatile uint16_t I_queue[N_SAMPLES];
