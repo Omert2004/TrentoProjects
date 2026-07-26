@@ -22,7 +22,7 @@ volatile int16_t IFQ_result = 0;
 volatile uint16_t I_queue[N_SAMPLES];
 volatile uint16_t Q_queue[N_SAMPLES];
 volatile int samples_index_in = 0;
-volatile int samples_index_out = N_SAMPLES - 1;
+volatile int samples_index_out = 0;   // was N_SAMPLES - 1
 
 //******************************************************************************
 // Minimal UART helpers (blocking, no printf/retargeting needed)
@@ -122,6 +122,7 @@ void Init_UART(void)
     EUSCI_A_UART_init(EUSCI_A0_BASE, &uartConfig);
     EUSCI_A_UART_enable(EUSCI_A0_BASE);
 }
+
 void Init_ADC(void)
 {
     ADC12_B_initParam adcConfig = {0};
@@ -155,6 +156,7 @@ void Init_ADC(void)
     ADC12_B_clearInterrupt(ADC12_B_BASE, 0, ADC12_B_IFG1);
     ADC12_B_enableInterrupt(ADC12_B_BASE, ADC12_B_IE1, 0, 0);
 
+    ADC12CTL1 = (ADC12CTL1 & ~ADC12CONSEQ_3) | ADC12CONSEQ_1;  // sequence-of-channels mode
 }
 
 void Init_TIMER(void)

@@ -2,8 +2,6 @@
 #include <stdint.h>
 #include "radar_configuration.h"
 
-volatile uint32_t timer_tick_count = 0;
-
 int main(void)
 {
     WDT_A_hold(WDT_A_BASE);
@@ -11,22 +9,21 @@ int main(void)
     Init_Clock();
     Init_GPIO();
     Init_UART();
-    Init_TIMER();     // ADC intentionally NOT initialized for this test
+    Init_ADC();             // real ADC now enabled
+    Init_TIMER();
 
     __enable_interrupt();
 
-    uint32_t last_sent = 0xFFFFFFFF;   // force the first value through
-
     while (1)
     {
-        uint32_t snapshot = timer_tick_count;   // read once, avoid tearing issues
-        if (snapshot != last_sent)
+        // Busy-poll instead of LPM0 -- proven working, LPM0 wake shelved for now.
+        while (samples_index_out != samples_index_in)
         {
-            // Pack the 32-bit counter into the existing 2x16-bit frame format:
-            // IFI = low 16 bits, IFQ = high 16 bits
-            UART_putFrame((uint16_t)(snapshot & 0xFFFF),
-                          (uint16_t)((snapshot >> 16) & 0xFFFF));
-            last_sent = snapshot;
+            uint16_t ifi = I_queue[samples_index_out];
+            uint16_t ifq = Q_queue[samples_index_out];
+            samples_index_out = (samples_index_out + 1) % N_SAMPLES;
+
+            UART_putFrame(ifi, ifq);
         }
     }
 }
@@ -40,5 +37,36 @@ void __attribute__ ((interrupt(TIMER2_A0_VECTOR))) TIMER2_A0_ISR(void)
 #error Compiler not supported!
 #endif
 {
-    timer_tick_count++;
+    ADC12CTL0 |= ADC12ENC | ADC12SC;   // re-enable AND start each sequence --
+                                        // CONSEQ_1 clears ENC after every pass
+}
+
+// ADC12_B ISR: fires when MEM1 finishes (end of sequence, since memParam1
+// has endOfSequence = ADC12_B_ENDOFSEQUENCE). Pulls both channel results
+// into the ring buffer.
+#if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
+#pragma vector = ADC12_B_VECTOR
+__interrupt void ADC12_B_ISR(void)
+#elif defined(__GNUC__)
+void __attribute__ ((interrupt(ADC12_B_VECTOR))) ADC12_B_ISR(void)
+#else
+#error Compiler not supported!
+#endif
+{
+    switch (__even_in_range(ADC12IV, ADC12IV_ADC12IFG31))
+    {
+        case ADC12IV_ADC12IFG1:   // MEM1 conversion complete
+        {
+            int next_in = (samples_index_in + 1) % N_SAMPLES;
+            if (next_in != samples_index_out)
+            {
+                I_queue[samples_index_in] = ADC12MEM0;
+                Q_queue[samples_index_in] = ADC12MEM1;
+                samples_index_in = next_in;
+            }
+            break;
+        }
+        default:
+            break;
+    }
 }
