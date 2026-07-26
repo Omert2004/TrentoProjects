@@ -4,7 +4,9 @@
 
 int main(void)
 {
-    WDT_A_hold(WDT_A_BASE);
+    // Configure Watchdog Timer (3 direct arguments: baseAddress, clockSelect, clockDivider)
+    WDT_A_initWatchdogTimer(WDT_A_BASE, WDT_A_CLOCKSOURCE_SMCLK, WDT_A_CLOCKDIVIDER_8192K);
+    WDT_A_start(WDT_A_BASE);
 
     Init_Clock();
     Init_GPIO();
@@ -16,6 +18,9 @@ int main(void)
 
     while (1)
     {
+        // Pet the watchdog timer on each iteration to prevent auto-reset
+        WDT_A_resetTimer(WDT_A_BASE);
+
         // Busy-poll instead of LPM0 -- proven working, LPM0 wake shelved for now.
         while (samples_index_out != samples_index_in)
         {
