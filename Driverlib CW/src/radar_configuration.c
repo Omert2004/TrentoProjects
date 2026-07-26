@@ -19,6 +19,11 @@
 volatile int16_t IFI_result = 0;
 volatile int16_t IFQ_result = 0;
 
+volatile uint16_t I_queue[N_SAMPLES];
+volatile uint16_t Q_queue[N_SAMPLES];
+volatile int samples_index_in = 0;
+volatile int samples_index_out = N_SAMPLES - 1;
+
 //******************************************************************************
 // Minimal UART helpers (blocking, no printf/retargeting needed)
 //******************************************************************************
@@ -117,13 +122,10 @@ void Init_UART(void)
     EUSCI_A_UART_init(EUSCI_A0_BASE, &uartConfig);
     EUSCI_A_UART_enable(EUSCI_A0_BASE);
 }
-
 void Init_ADC(void)
 {
-    // ADC12CLK = ADC12OSC (internal ~5 MHz osc, always available regardless
-    // of what MCLK/SMCLK happen to be set to elsewhere in the project)
     ADC12_B_initParam adcConfig = {0};
-    adcConfig.sampleHoldSignalSourceSelect = ADC12_B_SAMPLEHOLDSOURCE_SC;
+    adcConfig.sampleHoldSignalSourceSelect = ADC12_B_SAMPLEHOLDSOURCE_SC;  // TA2 CCR1 output (Table 9-18)
     adcConfig.clockSourceSelect            = ADC12_B_CLOCKSOURCE_ADC12OSC;
     adcConfig.clockSourceDivider           = ADC12_B_CLOCKDIVIDER_1;
     adcConfig.clockSourcePredivider        = ADC12_B_CLOCKPREDIVIDER__1;
@@ -132,12 +134,10 @@ void Init_ADC(void)
     ADC12_B_init(ADC12_B_BASE, &adcConfig);
     ADC12_B_enable(ADC12_B_BASE);
 
-    // Longer sample-and-hold gives the radar's analog output stage time to settle
     ADC12_B_setupSamplingTimer(ADC12_B_BASE,
         ADC12_B_CYCLEHOLD_128_CYCLES, ADC12_B_CYCLEHOLD_128_CYCLES,
         ADC12_B_MULTIPLESAMPLESENABLE);
 
-    // MEM0 = IFI (A12)
     ADC12_B_configureMemoryParam memParam0 = {0};
     memParam0.memoryBufferControlIndex = ADC12_B_MEMORY_0;
     memParam0.inputSourceSelect        = ADC12_B_INPUT_A12;
@@ -145,7 +145,6 @@ void Init_ADC(void)
     memParam0.endOfSequence            = ADC12_B_NOTENDOFSEQUENCE;
     ADC12_B_configureMemory(ADC12_B_BASE, &memParam0);
 
-    // MEM1 = IFQ (A13), end of sequence
     ADC12_B_configureMemoryParam memParam1 = {0};
     memParam1.memoryBufferControlIndex = ADC12_B_MEMORY_1;
     memParam1.inputSourceSelect        = ADC12_B_INPUT_A13;
@@ -155,4 +154,33 @@ void Init_ADC(void)
 
     ADC12_B_clearInterrupt(ADC12_B_BASE, 0, ADC12_B_IFG1);
     ADC12_B_enableInterrupt(ADC12_B_BASE, ADC12_B_IE1, 0, 0);
+
+}
+
+void Init_TIMER(void)
+{
+    // TA2 up-mode timer at 4 kHz. CCR1's output feeds directly into the
+    // ADC12 hardware trigger via ADC12SHSx = 5 (Table 9-18) -- no ISR
+    // needed on this timer, it's a pure hardware signal path.
+    Timer_A_initUpModeParam upParam = {0};
+    upParam.clockSource                              = TIMER_A_CLOCKSOURCE_SMCLK;
+    upParam.clockSourceDivider                        = TIMER_A_CLOCKSOURCE_DIVIDER_1;
+    upParam.timerPeriod                               = (uint16_t)((8000000UL / SAMPLING_RATE_HZ) - 1); // 1999
+    upParam.timerInterruptEnable_TAIE                 = TIMER_A_TAIE_INTERRUPT_DISABLE;
+    upParam.captureCompareInterruptEnable_CCR0_CCIE   = TIMER_A_CCIE_CCR0_INTERRUPT_ENABLE;
+    upParam.timerClear                                = TIMER_A_DO_CLEAR;
+    upParam.startTimer                                = false;
+    Timer_A_initUpMode(TIMER_A2_BASE, &upParam);
+
+    // CCR1 in compare mode, set/reset output -- produces one trigger pulse
+    // per period. The compare value's exact position in the period doesn't
+    // matter much; using roughly the midpoint, same idea as the thesis code.
+    Timer_A_initCompareModeParam compParam = {0};
+    compParam.compareRegister        = TIMER_A_CAPTURECOMPARE_REGISTER_1;
+    compParam.compareInterruptEnable = TIMER_A_CAPTURECOMPARE_INTERRUPT_DISABLE;
+    compParam.compareOutputMode      = TIMER_A_OUTPUTMODE_SET_RESET;
+    compParam.compareValue           = 1000;
+    Timer_A_initCompareMode(TIMER_A2_BASE, &compParam);
+
+    Timer_A_startCounter(TIMER_A2_BASE, TIMER_A_UP_MODE);
 }
