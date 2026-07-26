@@ -4,24 +4,21 @@
 
 int main(void)
 {
-    // Configure Watchdog Timer (3 direct arguments: baseAddress, clockSelect, clockDivider)
     WDT_A_initWatchdogTimer(WDT_A_BASE, WDT_A_CLOCKSOURCE_SMCLK, WDT_A_CLOCKDIVIDER_8192K);
     WDT_A_start(WDT_A_BASE);
 
     Init_Clock();
     Init_GPIO();
     Init_UART();
-    Init_ADC();             // real ADC now enabled
+    Init_ADC();
     Init_TIMER();
 
     __enable_interrupt();
 
     while (1)
     {
-        // Pet the watchdog timer on each iteration to prevent auto-reset
         WDT_A_resetTimer(WDT_A_BASE);
 
-        // Busy-poll instead of LPM0 -- proven working, LPM0 wake shelved for now.
         while (samples_index_out != samples_index_in)
         {
             uint16_t ifi = I_queue[samples_index_out];
@@ -30,6 +27,8 @@ int main(void)
 
             UART_putFrame(ifi, ifq);
         }
+
+        __bis_SR_register(LPM0_bits + GIE);   // sleep until ADC ISR wakes us
     }
 }
 
@@ -42,13 +41,11 @@ void __attribute__ ((interrupt(TIMER2_A0_VECTOR))) TIMER2_A0_ISR(void)
 #error Compiler not supported!
 #endif
 {
-    ADC12CTL0 |= ADC12ENC | ADC12SC;   // re-enable AND start each sequence --
-                                        // CONSEQ_1 clears ENC after every pass
+    ADC12CTL0 |= ADC12ENC | ADC12SC;
+    // no wake here -- timer only starts a conversion, doesn't itself
+    // produce new data yet; waking belongs to the ADC completion ISR below
 }
 
-// ADC12_B ISR: fires when MEM1 finishes (end of sequence, since memParam1
-// has endOfSequence = ADC12_B_ENDOFSEQUENCE). Pulls both channel results
-// into the ring buffer.
 #if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
 #pragma vector = ADC12_B_VECTOR
 __interrupt void ADC12_B_ISR(void)
@@ -60,7 +57,7 @@ void __attribute__ ((interrupt(ADC12_B_VECTOR))) ADC12_B_ISR(void)
 {
     switch (__even_in_range(ADC12IV, ADC12IV_ADC12IFG31))
     {
-        case ADC12IV_ADC12IFG1:   // MEM1 conversion complete
+        case ADC12IV_ADC12IFG1:
         {
             int next_in = (samples_index_in + 1) % N_SAMPLES;
             if (next_in != samples_index_out)
@@ -69,6 +66,7 @@ void __attribute__ ((interrupt(ADC12_B_VECTOR))) ADC12_B_ISR(void)
                 Q_queue[samples_index_in] = ADC12MEM1;
                 samples_index_in = next_in;
             }
+            __bic_SR_register_on_exit(LPM0_bits);   // wake main() to drain buffer
             break;
         }
         default:
