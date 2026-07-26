@@ -10,6 +10,15 @@
 extern volatile int16_t IFI_result;
 extern volatile int16_t IFQ_result;
 
+// was 4000 -- fits under 115200 baud UART budget with margin
+#define SAMPLING_RATE_HZ 1500     // per-channel; timer period is set for 2x this (I then Q)
+#define N_SAMPLES 512           // ring buffer depth, tune to taste
+
+extern volatile uint16_t I_queue[N_SAMPLES];
+extern volatile uint16_t Q_queue[N_SAMPLES];
+extern volatile int samples_index_in;
+extern volatile int samples_index_out;
+
 //******************************************************************************
 // Minimal UART helpers (blocking, no printf/retargeting needed)
 //******************************************************************************
@@ -25,5 +34,6 @@ void Init_Clock(void);
 void Init_GPIO(void);
 void Init_UART(void);
 void Init_ADC(void);
+void Init_TIMER(void);
 
 #endif // RADAR_CONFIGURATION_H
