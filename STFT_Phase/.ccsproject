@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVariant value="50:Theia-based"/>
+	<ccsVersion value="71.0.0"/>
+	<deviceFamily value="MSP430"/>
+	<executableActions value=""/>
+	<createSlaveProjects value=""/>
+	<templateProperties value="id=framctl_a_ex1_write.projectspec.Driverlib CW"/>
+	<connection value="common/targetdb/connections/TIMSP430-USB.xml"/>
+	<activeTargetConfiguration value="targetConfigs/MSP430FR5994.ccxml"/>
+	<origin value="C:\ti\msp430ware_3_80_14_01\driverlib\examples\MSP430FR5xx_6xx\framctl_a\CCS\framctl_a_ex1_write.projectspec"/>
+	<filesToOpen value=""/>
+</projectOptions>

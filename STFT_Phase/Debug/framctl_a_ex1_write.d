@@ -1,0 +1,168 @@
+# FIXED
+
+framctl_a_ex1_write.obj: ../framctl_a_ex1_write.c
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/driverlib.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/inc/hw_memmap.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/ccs_base/msp430/include/msp430.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/ccs_base/msp430/include/msp430fr5994.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/ccs_base/msp430/include/in430.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/intrinsics.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/intrinsics_legacy_undefs.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/ccs_base/msp430/include/legacy.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/stdint.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/_ti_config.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/linkage.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/_stdint40.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/sys/stdint.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/sys/cdefs.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/sys/_types.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/machine/_types.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/machine/_stdint.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/sys/_stdint.h
+framctl_a_ex1_write.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/stdbool.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/esi.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/eusci_b_i2c.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/cs.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/aes256.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/uups.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/framctl_a.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/timer_b.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/framctl.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/eusci_a_spi.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/eusci_a_uart.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/tlv.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/timer_a.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/pmm.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/adc12_b.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/sysctl.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/sfr.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/ref_a.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/mpy32.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/wdt_a.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/saph.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/crc32.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/mpu.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/mtif.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/lcd_c.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/rtc_c.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/gpio.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/rtc_b.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/comp_e.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/ram.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/saph_a.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/dma.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/hspll.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/eusci_b_spi.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/sdhs.h
+framctl_a_ex1_write.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/crc.h
+
+../framctl_a_ex1_write.c:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/driverlib.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/inc/hw_memmap.h:
+
+C:/ti/ccs2100/ccs/ccs_base/msp430/include/msp430.h:
+
+C:/ti/ccs2100/ccs/ccs_base/msp430/include/msp430fr5994.h:
+
+C:/ti/ccs2100/ccs/ccs_base/msp430/include/in430.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/intrinsics.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/intrinsics_legacy_undefs.h:
+
+C:/ti/ccs2100/ccs/ccs_base/msp430/include/legacy.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/stdint.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/_ti_config.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/linkage.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/_stdint40.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/sys/stdint.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/sys/cdefs.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/sys/_types.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/machine/_types.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/machine/_stdint.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/sys/_stdint.h:
+
+C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/stdbool.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/esi.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/eusci_b_i2c.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/cs.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/aes256.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/uups.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/framctl_a.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/timer_b.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/framctl.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/eusci_a_spi.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/eusci_a_uart.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/tlv.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/timer_a.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/pmm.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/adc12_b.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/sysctl.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/sfr.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/ref_a.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/mpy32.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/wdt_a.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/saph.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/crc32.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/mpu.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/mtif.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/lcd_c.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/rtc_c.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/gpio.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/rtc_b.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/comp_e.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/ram.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/saph_a.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/dma.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/hspll.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/eusci_b_spi.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/sdhs.h:
+
+C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/radar-project-main/Driverlib\ CW/driverlib/MSP430FR5xx_6xx/crc.h:
+

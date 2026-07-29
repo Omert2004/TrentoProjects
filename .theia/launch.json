@@ -22,6 +22,28 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "STFT_Phase",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "STFT_Phase",
+                "resourceId": "/STFT_Phase"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
