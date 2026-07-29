@@ -1,88 +1,103 @@
 #include <driverlib.h>
 #include <DSPLib.h>
-#include <math.h>
 #include "STFT.h"
 #include "radar_configuration.h"
 
-typedef struct {
-    int bin;
-    int negate_q;   // 0 = normal direction, 1 = flipped (tests I/Q sign convention)
-    const char *label_id;  // just for your own reference, not transmitted
-} test_case_t;
-
-// Test matrix: DC, low bin, mid bin (already passed), near-Nyquist, and a
-// negative-direction case to confirm I/Q ordering preserves motion sign.
-static test_case_t tests[] = {
-    { 0,   0, "DC" },
-    { 1,   0, "low_bin" },
-    { 20,  0, "mid_bin_known_good" },
-    { 20,  1, "mid_bin_negated_Q" },
-    { 100, 0, "high_bin" },
-    { 127, 0, "near_nyquist" },
-};
-#define NUM_TESTS (sizeof(tests) / sizeof(tests[0]))
+// STFT input window -- holds the most recent FFT_SIZE samples, shifted
+// left by FFT_HOP each time a new hop's worth of data arrives. Same
+// shift-and-append pattern as the original MSP432 main.c.
+static uint16_t STFT_input_I[FFT_SIZE];
+static uint16_t STFT_input_Q[FFT_SIZE];
 
 int main(void)
 {
-    WDT_A_hold(WDT_A_BASE);
+    WDT_A_initWatchdogTimer(WDT_A_BASE, WDT_A_CLOCKSOURCE_SMCLK, WDT_A_CLOCKDIVIDER_8192K);
+    WDT_A_start(WDT_A_BASE);
 
     Init_Clock();
     Init_GPIO();
     Init_UART();
+    Init_ADC();
+    Init_TIMER();
+    STFT_init();
 
     __enable_interrupt();
 
-    STFT_init();
-
-    static uint16_t fake_I[FFT_SIZE];
-    static uint16_t fake_Q[FFT_SIZE];
-
     while (1)
     {
-        int t;
-        for (t = 0; t < NUM_TESTS; t++)
+        WDT_A_resetTimer(WDT_A_BASE);
+
+        // Drain the ring buffer in FFT_HOP-sized chunks, same accounting
+        // logic as the original MSP432 main loop.
+        int samples = (samples_index_in >= samples_index_out)
+                        ? samples_index_in - samples_index_out
+                        : N_SAMPLES - samples_index_out + samples_index_in;
+
+        for (; samples >= FFT_HOP; samples -= FFT_HOP)
         {
-            int bin = tests[t].bin;
-            int negate_q = tests[t].negate_q;
-
-            int k;
-            for (k = 0; k < FFT_SIZE; k++)
+            // Shift the STFT window left by FFT_HOP, then append the new hop
+            int i;
+            for (i = 0; i < FFT_SIZE - FFT_HOP; i++)
             {
-                float angle = 2.0f * 3.14159265f * bin * k / FFT_SIZE;
-                float q_val = negate_q ? -sinf(angle) : sinf(angle);
-                fake_I[k] = (uint16_t)(2048 + 1500.0f * cosf(angle));
-                fake_Q[k] = (uint16_t)(2048 + 1500.0f * q_val);
+                STFT_input_I[i] = STFT_input_I[i + FFT_HOP];
+                STFT_input_Q[i] = STFT_input_Q[i + FFT_HOP];
+            }
+            for (i = FFT_SIZE - FFT_HOP; i < FFT_SIZE; i++)
+            {
+                STFT_input_I[i] = I_queue[samples_index_out];
+                STFT_input_Q[i] = Q_queue[samples_index_out];
+                samples_index_out = (samples_index_out + 1) % N_SAMPLES;
             }
 
-            STFT_compute_next_segment(fake_I, fake_Q);
+            ADC12_B_disableInterrupt(ADC12_B_BASE, ADC12_B_IE1, 0, 0);
+            STFT_compute_next_segment(STFT_input_I, STFT_input_Q);
+            ADC12_B_enableInterrupt(ADC12_B_BASE, ADC12_B_IE1, 0, 0);
 
-            int8_t peak_val = -1;
-            int peak_bin = -1;
-            int n;
-            for (n = 0; n < FFT_SIZE; n++)
-            {
-                if (spectrogram[STFT_SEGMENTS - 1][n] > peak_val)
-                {
-                    peak_val = spectrogram[STFT_SEGMENTS - 1][n];
-                    peak_bin = n;
-                }
-            }
-
-            // Expected shifted bin: normal direction -> center+bin,
-            // negated Q -> center-bin (mirrors on the other side, confirming
-            // direction/sign is preserved correctly through the pipeline).
-            int expected_bin = negate_q
-                ? ((FFT_SIZE / 2 - bin) + FFT_SIZE) % FFT_SIZE
-                : (bin + FFT_SIZE / 2) % FFT_SIZE;
-
-            // Frame 1: test index (IFI slot) + expected bin (IFQ slot)
-            UART_putFrame((uint16_t)t, (uint16_t)expected_bin);
-            // Frame 2: actual peak bin (IFI slot) + actual peak value (IFQ slot)
-            UART_putFrame((uint16_t)peak_bin, (uint16_t)peak_val);
-
-            __delay_cycles(800000);  // ~0.1s pause so frames are easy to read/separate
+            // Stream only the newest column -- the PC side can reconstruct
+            // the rolling spectrogram image itself, same as before.
+            UART_putSpectrogramColumn(spectrogram[STFT_SEGMENTS - 1], FFT_SIZE);
         }
 
-        __delay_cycles(4000000);  // longer pause before repeating the whole cycle
+        __bis_SR_register(LPM0_bits + GIE);   // sleep until ADC ISR wakes us
+    }
+}
+
+#if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
+#pragma vector = TIMER2_A0_VECTOR
+__interrupt void TIMER2_A0_ISR(void)
+#elif defined(__GNUC__)
+void __attribute__ ((interrupt(TIMER2_A0_VECTOR))) TIMER2_A0_ISR(void)
+#else
+#error Compiler not supported!
+#endif
+{
+    ADC12CTL0 |= ADC12ENC | ADC12SC;
+}
+
+#if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
+#pragma vector = ADC12_B_VECTOR
+__interrupt void ADC12_B_ISR(void)
+#elif defined(__GNUC__)
+void __attribute__ ((interrupt(ADC12_B_VECTOR))) ADC12_B_ISR(void)
+#else
+#error Compiler not supported!
+#endif
+{
+    switch (__even_in_range(ADC12IV, ADC12IV_ADC12IFG31))
+    {
+        case ADC12IV_ADC12IFG1:
+        {
+            int next_in = (samples_index_in + 1) % N_SAMPLES;
+            if (next_in != samples_index_out)
+            {
+                I_queue[samples_index_in] = ADC12MEM0;
+                Q_queue[samples_index_in] = ADC12MEM1;
+                samples_index_in = next_in;
+            }
+            __bic_SR_register_on_exit(LPM0_bits);
+            break;
+        }
+        default:
+            break;
     }
 }

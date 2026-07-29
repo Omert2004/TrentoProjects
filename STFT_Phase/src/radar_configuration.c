@@ -73,6 +73,18 @@ void UART_putFrame(uint16_t ifi, uint16_t ifq)
     UART_putc((uint8_t)((ifq >> 8) & 0xFF));
 }
 
+// Frame: [0xAA][0x55][0xC0 = spectrogram-column marker][len bytes of column data]
+// Distinct marker byte (0xC0) lets the PC side tell this apart from the old
+// raw IFI/IFQ frame type (0xAA 0x55 directly followed by 4 body bytes).
+void UART_putSpectrogramColumn(int8_t *column, int len)
+{
+    UART_putc(0xAA);
+    UART_putc(0x55);
+    UART_putc(0xC0);
+    int i;
+    for (i = 0; i < len; i++)
+        UART_putc((uint8_t)column[i]);
+}
 //******************************************************************************
 // Init Functions
 //******************************************************************************

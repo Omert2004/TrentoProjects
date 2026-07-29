@@ -65,9 +65,6 @@ main.obj: C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_filter.h
 main.obj: C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_transform.h
 main.obj: C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_utility.h
 main.obj: C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_ROM.h
-main.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/math.h
-main.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/_defs.h
-main.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/machine/_limits.h
 main.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/STFT_Phase/inc/STFT.h
 main.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/STFT_Phase/inc/radar_configuration.h
 main.obj: C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/STFT_Phase/driverlib/MSP430FR5xx_6xx/driverlib.h
@@ -201,12 +198,6 @@ C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_transform.h:
 C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_utility.h:
 
 C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_ROM.h:
-
-C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/math.h:
-
-C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/_defs.h:
-
-C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/machine/_limits.h:
 
 C:/Users/Oguzm/OneDrive\ -\ ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/STFT_Phase/inc/STFT.h:
 

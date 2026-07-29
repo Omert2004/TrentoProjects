@@ -26,6 +26,7 @@ void UART_putc(uint8_t c);
 void UART_puts(const char *s);
 void UART_putU16(uint16_t val);
 void UART_putFrame(uint16_t ifi, uint16_t ifq);
+void UART_putSpectrogramColumn(int8_t *column, int len);
 
 //******************************************************************************
 // Init Functions
