@@ -1,0 +1,727 @@
+[
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/filter/msp_biquad_cascade_df1_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/filter/msp_biquad_cascade_df2_ext_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/filter/msp_biquad_cascade_df2_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/filter/msp_biquad_df1_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/filter/msp_biquad_df2_ext_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/filter/msp_biquad_df2_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/filter/msp_cmplx_fir_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/filter/msp_cmplx_fir_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/filter/msp_fir_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/filter/msp_fir_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/lea/msp_lea_flags.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/lea/msp_lea_init.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/lea/msp_lea_isr.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/lea/msp_lea_patch.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_abs_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_abs_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_add_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_add_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_mpy_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_mpy_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_neg_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_neg_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_offset_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_offset_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_scale_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_scale_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_shift_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_shift_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_sub_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_sub_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_trans_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/matrix/msp_matrix_trans_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_cmplx_bitrev_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_cmplx_bitrev_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_cmplx_fft_auto_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_cmplx_fft_fixed_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_cmplx_fft_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_cmplx_ifft_auto_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_cmplx_ifft_fixed_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_cmplx_ifft_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_fft_auto_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_fft_fixed_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_fft_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_ifft_auto_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_ifft_fixed_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_ifft_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_split_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_split_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/transform/msp_transform_tables.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_cmplx_fill_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_cmplx_fill_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_cmplx_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_cmplx_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_copy_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_copy_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_deinterleave_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_deinterleave_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_fill_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_fill_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_interleave_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_interleave_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_iq31_to_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_q15_to_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/utility/msp_sinusoid_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_abs_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_abs_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_add_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_add_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_add_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_add_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_conj_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_conj_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_mac_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_mac_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_mpy_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_mpy_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_mpy_real_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_mpy_real_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_scale_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_scale_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_shift_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_shift_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_sub_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_cmplx_sub_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_mac_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_mac_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_max_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_max_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_max_uq15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_max_uq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_min_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_min_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_min_uq15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_min_uq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_mpy_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_mpy_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_neg_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_neg_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_offset_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_offset_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_scale_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_scale_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_shift_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_shift_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_sub_iq31.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/ti/msp/DSPLib_1_30_00_02/source/vector/msp_sub_q15.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/adc12_b.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/aes256.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/comp_e.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/crc.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/crc32.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/cs.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/dma.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/esi.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/eusci_a_spi.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/eusci_a_uart.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/eusci_b_i2c.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/eusci_b_spi.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/framctl.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/framctl_a.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/gpio.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/hspll.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/lcd_c.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/mpu.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/mpy32.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/mtif.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/pmm.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/ram.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/ref_a.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/rtc_b.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/rtc_c.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/saph.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/saph_a.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/sdhs.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/sfr.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/sysctl.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/timer_a.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/timer_b.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/tlv.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/uups.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx/wdt_a.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/main.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/src/STFT.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/src/radar_configuration.c"
+   },
+   {
+      "directory" : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/ccs_base/msp430/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include\" -I\"C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/inc\" -I\"C:/ti/msp/DSPLib_1_30_00_02/include\" -D__MSP430FR5994__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/Oguzm/OneDrive - ozyegin.edu.tr/Desktop/Github_Projects/TrentoProjects/AI_Phase/src/window_q15.c"
+   }
+]
