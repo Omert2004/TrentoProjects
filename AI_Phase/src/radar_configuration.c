@@ -24,6 +24,9 @@ volatile uint16_t Q_queue[N_SAMPLES];
 volatile int samples_index_in = 0;
 volatile int samples_index_out = 0;   // was N_SAMPLES - 1
 
+// A single contiguous buffer to hold the 3-byte header + 256-byte column data
+static int8_t dma_tx_buffer[259];
+
 //******************************************************************************
 // Minimal UART helpers (blocking, no printf/retargeting needed)
 //******************************************************************************
@@ -76,15 +79,37 @@ void UART_putFrame(uint16_t ifi, uint16_t ifq)
 // Frame: [0xAA][0x55][0xC0 = spectrogram-column marker][len bytes of column data]
 // Distinct marker byte (0xC0) lets the PC side tell this apart from the old
 // raw IFI/IFQ frame type (0xAA 0x55 directly followed by 4 body bytes).
-void UART_putSpectrogramColumn(int8_t *column, int len)
+void UART_putSpectrogramColumn_DMA(int8_t *column, int len)
 {
-    UART_putc(0xAA);
-    UART_putc(0x55);
-    UART_putc(0xC0);
+    // 1. Pack the required header (0xAA, 0x55, 0xC0)
+    dma_tx_buffer[0] = (int8_t)0xAA;
+    dma_tx_buffer[1] = (int8_t)0x55;
+    dma_tx_buffer[2] = (int8_t)0xC0;
+
+    // 2. Copy the spectrogram column data into the contiguous buffer
     int i;
-    for (i = 0; i < len; i++)
-        UART_putc((uint8_t)column[i]);
+    for (i = 0; i < len; i++) {
+        dma_tx_buffer[3 + i] = column[i];
+    }
+
+    // 3. Configure the DMA source to start at the SECOND byte (0x55)
+    DMA_setSrcAddress(DMA_CHANNEL_0, (uint32_t)&dma_tx_buffer[1], DMA_DIRECTION_INCREMENT);
+    
+    // 4. Set the transfer size to the remaining bytes (len + 2)
+    DMA_setTransferSize(DMA_CHANNEL_0, len + 2);
+
+    // 5. Clear the TX interrupt flag to ensure the DMA doesn't fire prematurely
+    UCA0IFG &= ~UCTXIFG;
+
+    // 6. Enable the DMA channel
+    DMA_enableTransfers(DMA_CHANNEL_0);
+
+    // 7. Kickstart transmission by manually writing the first byte (0xAA) to the UART buffer.
+    // When 0xAA moves to the shift register, the hardware will naturally raise 
+    // the UCTXIFG flag, triggering the DMA to seamlessly send the rest of the buffer.
+    UCA0TXBUF = dma_tx_buffer[0];
 }
+
 //******************************************************************************
 // Init Functions
 //******************************************************************************
@@ -193,4 +218,24 @@ void Init_TIMER(void)
     Timer_A_initCompareMode(TIMER_A2_BASE, &compParam);
 
     Timer_A_startCounter(TIMER_A2_BASE, TIMER_A_UP_MODE);
+}
+
+
+void Init_DMA(void) {
+    DMA_initParam dmaConfig = {0};
+    dmaConfig.channelSelect = DMA_CHANNEL_0; 
+    dmaConfig.transferModeSelect = DMA_TRANSFER_SINGLE;
+    dmaConfig.transferSize = 0; // Will be set right before transmission
+    dmaConfig.triggerSourceSelect = DMA_TRIGGERSOURCE_15; // Route UART TX flag to DMA
+    dmaConfig.transferUnitSelect = DMA_SIZE_SRCBYTE_DSTBYTE;
+    dmaConfig.triggerTypeSelect = DMA_TRIGGER_RISINGEDGE;  // DMALEVEL = 0
+    
+    DMA_init(&dmaConfig);
+
+    // Set the destination to the eUSCI_A0 transmit buffer (static address)
+    DMA_setDstAddress(DMA_CHANNEL_0, (uint32_t)&UCA0TXBUF, DMA_DIRECTION_UNCHANGED);
+    
+    // Enable the DMA interrupt so the CPU can wake up when the transfer is entirely complete
+    DMA_clearInterrupt(DMA_CHANNEL_0);
+    DMA_enableInterrupt(DMA_CHANNEL_0);
 }

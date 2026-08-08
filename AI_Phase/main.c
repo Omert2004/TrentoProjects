@@ -1,5 +1,6 @@
 #include <driverlib.h>
 #include <DSPLib.h>
+#include <stdbool.h>
 #include "STFT.h"
 #include "radar_configuration.h"
 
@@ -9,6 +10,9 @@
 static uint16_t STFT_input_I[FFT_SIZE];
 static uint16_t STFT_input_Q[FFT_SIZE];
 
+// Volatile flag to synchronize CPU and DMA
+volatile bool dma_tx_in_progress = false;
+
 int main(void)
 {
     WDT_A_initWatchdogTimer(WDT_A_BASE, WDT_A_CLOCKSOURCE_SMCLK, WDT_A_CLOCKDIVIDER_8192K);
@@ -17,6 +21,7 @@ int main(void)
     Init_Clock();
     Init_GPIO();
     Init_UART();
+    Init_DMA();      // Initialize DMA peripheral
     Init_ADC();
     Init_TIMER();
     STFT_init();
@@ -53,14 +58,24 @@ int main(void)
             STFT_compute_next_segment(STFT_input_I, STFT_input_Q);
             ADC12_B_enableInterrupt(ADC12_B_BASE, ADC12_B_IE1, 0, 0);
 
-            // Stream only the newest column -- the PC side can reconstruct
-            // the rolling spectrogram image itself, same as before.
-            UART_putSpectrogramColumn(spectrogram[STFT_SEGMENTS - 1], FFT_SIZE);
+            // Wait in LPM0 if the DMA is still transmitting the previous frame
+            while (dma_tx_in_progress)
+            {
+                __bis_SR_register(LPM0_bits + GIE);
+            }
+
+            // Flag DMA as active and fire off the new column
+            dma_tx_in_progress = true;
+            UART_putSpectrogramColumn_DMA(spectrogram[STFT_SEGMENTS - 1], FFT_SIZE);
         }
 
         __bis_SR_register(LPM0_bits + GIE);   // sleep until ADC ISR wakes us
     }
 }
+
+//------------------------------------------------------------------------------
+// Interrupt Service Routines
+//------------------------------------------------------------------------------
 
 #if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
 #pragma vector = TIMER2_A0_VECTOR
@@ -94,9 +109,30 @@ void __attribute__ ((interrupt(ADC12_B_VECTOR))) ADC12_B_ISR(void)
                 Q_queue[samples_index_in] = ADC12MEM1;
                 samples_index_in = next_in;
             }
-            __bic_SR_register_on_exit(LPM0_bits);
+            __bic_SR_register_on_exit(LPM0_bits); // Wake up CPU for STFT processing
             break;
         }
+        default:
+            break;
+    }
+}
+
+// DMA ISR: Wakes the CPU when UART transmission of the buffer is entirely finished
+#if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
+#pragma vector = DMA_VECTOR
+__interrupt void DMA_ISR(void)
+#elif defined(__GNUC__)
+void __attribute__ ((interrupt(DMA_VECTOR))) DMA_ISR(void)
+#else
+#error Compiler not supported!
+#endif
+{
+    switch (__even_in_range(DMAIV, 16))
+    {
+        case DMAIV_DMA0IFG:
+            dma_tx_in_progress = false; // Transmission complete
+            __bic_SR_register_on_exit(LPM0_bits); // Wake CPU in case it is waiting to send next frame
+            break;
         default:
             break;
     }

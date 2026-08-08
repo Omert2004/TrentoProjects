@@ -36,5 +36,6 @@ void Init_GPIO(void);
 void Init_UART(void);
 void Init_ADC(void);
 void Init_TIMER(void);
+void Init_DMA(void);
 
 #endif // RADAR_CONFIGURATION_H
