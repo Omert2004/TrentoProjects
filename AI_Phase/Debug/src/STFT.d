@@ -30,9 +30,6 @@ src/STFT.obj: C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_filter.h
 src/STFT.obj: C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_transform.h
 src/STFT.obj: C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_utility.h
 src/STFT.obj: C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_ROM.h
-src/STFT.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/math.h
-src/STFT.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/_defs.h
-src/STFT.obj: C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/machine/_limits.h
 
 ../src/STFT.c:
 
@@ -93,10 +90,4 @@ C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_transform.h:
 C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_utility.h:
 
 C:/ti/msp/DSPLib_1_30_00_02/include/DSPLib_ROM.h:
-
-C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/math.h:
-
-C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/_defs.h:
-
-C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-msp430_21.6.2.LTS/include/machine/_limits.h:
 

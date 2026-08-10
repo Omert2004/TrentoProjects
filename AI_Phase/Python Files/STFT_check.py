@@ -12,6 +12,8 @@ import serial
 
 SYNC1, SYNC2 = 0xAA, 0x55
 SPECTROGRAM_MARKER = 0xC0
+RATE_MARKER = 0xC2      # Test 1: 1 Hz ADC-rate snapshot, 2-byte body
+PROFILE_MARKER = 0xC3   # STFT-compute vs DMA-wait profiling, 6-byte body
 IFRAME_BODY_SIZE = 4      # IFI (u16 LE) + IFQ (u16 LE)
 COLUMN_SIZE = 256         # FFT_SIZE
 DC_GUARD = 5              # bins excluded on each side of center when finding the motion peak
@@ -86,7 +88,26 @@ def read_frame_verbose(ser, show_raw, show_columns, frame_idx, elapsed_time, log
             log_fh.flush()   # flush per-column so Ctrl+C never loses buffered data
 
         return ("column", column)
-    
+
+    elif frame_type == RATE_MARKER:
+        # Test 1 rate-snapshot frame: 2 body bytes. Not otherwise used by
+        # this script -- just consumed so byte alignment isn't lost. Use
+        # profile_check.py to actually see these values.
+        body = ser.read(2)
+        if len(body) != 2:
+            print("[timeout: only got partial 0xC2 rate-frame body]")
+            return None
+        return ("rate", None)
+
+    elif frame_type == PROFILE_MARKER:
+        # Profiling frame: 6 body bytes (hop_count, stft_ticks, dma_wait_ticks).
+        # Same idea -- consumed here just to stay aligned, see profile_check.py.
+        body = ser.read(6)
+        if len(body) != 6:
+            print("[timeout: only got partial 0xC3 profile-frame body]")
+            return None
+        return ("profile", None)
+
     else:
         # Treat frame_type byte as low byte of IFI
         rest = ser.read(IFRAME_BODY_SIZE - 1)
