@@ -1,66 +1,123 @@
 """
 radar_stft_capture.py
 
-Replicates the STFT.c pipeline from the thesis project (sliding-window,
-Hanning-windowed, complex FFT over I+jQ, log-magnitude, frequency-shifted)
-on the PC side, fed from the raw IFI/IFQ samples streamed out of the
-MSP430FR5994 firmware over serial (COM7 by default).
+Live spectrogram viewer + logger for the MSP430FR5994 firmware.
 
-The current firmware (radar_configuration.c / main.c) just streams raw
-"IFI,IFQ\r\n" ADC pairs -- it does *not* do any windowing/FFT on-chip, unlike
-the older MSP432 thesis firmware (STFT.c). This script reproduces that
-missing STFT stage on the PC:
+Firmware (STFT.c) computes the windowed FFT on-chip via LEA and streams
+finished spectrogram columns as:
 
-    1. Samples are pushed into an FFT_SIZE-long sliding window (I and Q
-       separately), advancing FFT_HOP samples at a time -- exactly like the
-       shift-and-append loop in main.c.
-    2. Each window is centered (subtract half full-scale) and multiplied by
-       a Hanning window (matches window.c, minus the ADC-specific /8192
-       scaling that file baked into the window values).
-    3. A complex FFT is taken over (I + jQ) -- matches arm_cfft_f32 being
-       called on interleaved I/Q data in STFT.c.
-    4. Magnitude-squared -> log2 -> clip negative to 0 -> fftshift, exactly
-       mirroring STFT_compute_next_segment().
-    5. Each resulting row is appended to a growing spectrogram matrix
-       (rows = time segments, columns = frequency bins), plotted live as a
-       waterfall, and saved to disk on exit.
+    [0xAA][0x55][0xC0][256 bytes of int8_t column data]
+
+This script's job is just: read those columns, plot them as a rolling
+waterfall, and optionally log them to a text file (same "256
+space-separated values per line" format splitter.py / visualizer.py /
+spectrogram_view.py already expect).
+
+Rendering is decoupled from data arrival on purpose. Columns arrive at
+~31 Hz; a naive "redraw after every column" loop can't keep up with that
+plus a full-canvas imshow redraw, so the GUI event queue backs up and the
+window appears to freeze. Instead: a background timer (FuncAnimation)
+redraws at a fixed ~15 fps, and each tick drains *all* columns that have
+piled up in the serial buffer since the last tick in one non-blocking
+read, feeding them into the waterfall before a single redraw.
 
 Usage:
-    python radar_stft_capture.py
-    python radar_stft_capture.py --port COM7 --fft-size 256 --fft-hop 128
+    python radar_stft_capture.py --port COM7
+    python radar_stft_capture.py --port COM7 --log-file capture1.txt
 
 Dependencies:
-    pip install pyserial numpy matplotlib scipy
+    pip install pyserial numpy matplotlib
 """
 
 import argparse
-import sys
+import struct
 
 import numpy as np
 import serial
 import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
 from matplotlib.widgets import Button
-from scipy.io import savemat
-
-import struct
 
 SYNC1, SYNC2 = 0xAA, 0x55
-FRAME_BODY_SIZE = 4  # IFI (u16 LE) + IFQ (u16 LE)
+SPECTROGRAM_MARKER = 0xC0
+RATE_MARKER = 0xC2        # 1 Hz ADC-rate snapshot, 2-byte body -- parsed & discarded here
+PROFILE_MARKER = 0xC3     # STFT/DMA timing snapshot, 6-byte body -- parsed & discarded here
+COLUMN_SIZE = 256         # FFT_SIZE
+HEADER_SIZE = 3           # [0xAA][0x55][marker]
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description="Reproduce the thesis STFT.c pipeline on data streamed from a COM port.")
+    p = argparse.ArgumentParser(description="Live view of on-chip spectrogram columns streamed over serial.")
     p.add_argument("--port", default="COM7")
     p.add_argument("--baud", type=int, default=115200)
-    p.add_argument("--fft-size", type=int, default=256, help="FFT_SIZE (default 256, matches STFT.h)")
-    p.add_argument("--fft-hop", type=int, default=128, help="FFT_HOP (default 128, matches STFT.h)")
-    p.add_argument("--adc-bits", type=int, default=12,
-                   help="ADC resolution of the incoming samples (default 12, for ADC12_B on the FR5994; "
-                        "the original MSP432 thesis used a 14-bit ADC14 result and centered on 8192)")
-    p.add_argument("--max-segments-shown", type=int, default=150, help="Rows kept on screen in the live plot")
-    p.add_argument("--segments", type=int, default=0, help="Stop after this many segments (0 = run until Ctrl+C)")
-    p.add_argument("--outfile", default="radar_spectrogram")
+    p.add_argument("--max-segments-shown", type=int, default=150, help="Columns kept on screen in the live plot")
+    p.add_argument("--segments", type=int, default=0, help="Stop after this many columns (0 = run until Ctrl+C)")
+    p.add_argument("--redraw-hz", type=float, default=15.0, help="Plot refresh rate (decoupled from data rate)")
+    p.add_argument("--log-file", default=None,
+                    help="If set, append each column as a space-separated line to this file "
+                         "(same format splitter.py/visualizer.py/spectrogram_view.py expect)")
     return p.parse_args()
+
+
+class FrameParser:
+    """Byte-buffer based parser: feed it raw bytes as they arrive (any
+    chunk size), pull out complete frames as they become available,
+    silently resync on the next 0xAA 0x55 pair if anything looks corrupt.
+    Doing this on a buffer (instead of blocking ser.read(1) calls per
+    byte) is what lets the caller drain a whole burst of backlogged
+    columns in one non-blocking pass."""
+
+    def __init__(self):
+        self.buf = bytearray()
+
+    def feed(self, data: bytes):
+        self.buf.extend(data)
+
+    def pop_columns(self):
+        """Returns a list of newly-completed spectrogram columns (np.ndarray,
+        length COLUMN_SIZE). Other frame types (rate/profile) are consumed
+        and discarded so byte alignment is preserved."""
+        columns = []
+        while True:
+            idx = self.buf.find(bytes([SYNC1, SYNC2]))
+            if idx == -1:
+                # No sync pair found -- keep at most the last byte, in case
+                # it's a lone 0xAA waiting for its 0x55.
+                if len(self.buf) > 1:
+                    del self.buf[:-1]
+                break
+            if idx > 0:
+                del self.buf[:idx]  # drop garbage before the sync pair
+
+            if len(self.buf) < HEADER_SIZE:
+                break  # need the marker byte too
+
+            frame_type = self.buf[2]
+            if frame_type == SPECTROGRAM_MARKER:
+                need = HEADER_SIZE + COLUMN_SIZE
+            elif frame_type == RATE_MARKER:
+                need = HEADER_SIZE + 2
+            elif frame_type == PROFILE_MARKER:
+                need = HEADER_SIZE + 6
+            else:
+                # Not a recognized marker -- drop just the leading 0xAA and
+                # let the next loop iteration resync on whatever 0xAA 0x55
+                # comes next, rather than guessing a frame length.
+                del self.buf[0]
+                continue
+
+            if len(self.buf) < need:
+                break  # wait for more bytes next feed()
+
+            body = bytes(self.buf[HEADER_SIZE:need])
+            del self.buf[:need]
+
+            if frame_type == SPECTROGRAM_MARKER:
+                col = np.array(struct.unpack(f"<{COLUMN_SIZE}b", body), dtype=np.int32)
+                columns.append(col)
+            # RATE_MARKER / PROFILE_MARKER: already consumed above, nothing to return
+
+        return columns
 
 
 class SerialManager:
@@ -80,7 +137,10 @@ class SerialManager:
             print(f"\nDisconnected from {self.port}.")
         else:
             try:
-                self.ser = serial.Serial(self.port, self.baud, timeout=1)
+                # timeout=0 -> non-blocking reads: read() / in_waiting-based
+                # reads return immediately with whatever bytes are already
+                # available instead of stalling the redraw timer.
+                self.ser = serial.Serial(self.port, self.baud, timeout=0)
                 self.ser.reset_input_buffer()
                 self.is_connected = True
                 btn.label.set_text('Disconnect')
@@ -90,149 +150,99 @@ class SerialManager:
         plt.gcf().canvas.draw_idle()
 
 
-
-def read_sample(ser):
-    """Reads one binary frame: [0xAA][0x55][IFI_lo][IFI_hi][IFQ_lo][IFQ_hi]."""
-    b = ser.read(1)
-    if not b or b[0] != SYNC1:
-        return None
-    b = ser.read(1)
-    if not b or b[0] != SYNC2:
-        return None
-    body = ser.read(FRAME_BODY_SIZE)
-    if len(body) != FRAME_BODY_SIZE:
-        return None
-    ifi, ifq = struct.unpack("<HH", body)
-    return ifi, ifq
-
-def compute_segment(i_win, q_win, window, half_scale):
-    """Mirrors STFT_compute_next_segment() in STFT.c."""
-    fi = i_win.astype(np.float64) - half_scale
-    fq = q_win.astype(np.float64) - half_scale
-    windowed = (fi * window) + 1j * (fq * window)
-
-    spectrum = np.fft.fft(windowed)                    # arm_cfft_f32(&fft, tbuf, 0, 1)
-    magnitude = spectrum.real ** 2 + spectrum.imag ** 2  # magnitude = r*r + i*i  (no sqrt, as in STFT.c)
-
-    with np.errstate(divide="ignore"):
-        log_mag = np.log2(magnitude)
-    log_mag = np.where(magnitude <= 0, 0.0, log_mag)
-    log_mag[log_mag < 0] = 0.0                          # if(spectrogram[...][...] < 0) ... = 0
-
-    return np.fft.fftshift(log_mag)                     # (n + FFT_SIZE/2) % FFT_SIZE
-
-
-def save_spectrogram(segments, outfile):
-    if not segments:
-        print("No segments captured, nothing to save.")
-        return
-    spec = np.array(segments, dtype=np.float64)  # rows = time segments, cols = frequency bins
-    np.savetxt(f"{outfile}.csv", spec, delimiter=",")
-    savemat(f"{outfile}.mat", {"spectrogram": spec})
-    print(f"\nSaved {spec.shape[0]} segments x {spec.shape[1]} frequency bins to:")
-    print(f"  {outfile}.csv")
-    print(f"  {outfile}.mat   (MATLAB variable: spectrogram)")
-
-
 def main():
     args = parse_args()
-    
-    # Initialize the serial connection state (Starts Disconnected)
     ser_manager = SerialManager(args.port, args.baud)
-
-    fft_size = args.fft_size
-    fft_hop = args.fft_hop
-    half_scale = 2 ** (args.adc_bits - 1)  # centers ADC codes around 0 (8192 for the old 14-bit thesis ADC)
-
-    window = np.hanning(fft_size)  # same shape as window.c (that file also baked in an extra /8192 ADC-scale factor)
-
-    i_buf = np.zeros(fft_size)
-    q_buf = np.zeros(fft_size)
-    segments = []
+    parser = FrameParser()
 
     max_rows = args.max_segments_shown
-    waterfall = np.zeros((fft_size, max_rows))
-    
-    # Setup Plot
-    plt.ion()
-    fig, ax = plt.subplots()
-    plt.subplots_adjust(bottom=0.2) # Make space at the bottom for the UI button
-    
-    img = ax.imshow(waterfall, aspect="auto", cmap="viridis", origin="lower",
-                 extent=[0, max_rows, 0, fft_size])
-    ax.set_ylabel("Frequency bin (fftshift'ed, DC in the middle)")
-    ax.set_xlabel("Time segment (most recent on the right)")
-    ax.set_title(f"Live STFT spectrogram  (FFT_SIZE={fft_size}, FFT_HOP={fft_hop})")
-    cbar = fig.colorbar(img, ax=ax)
-    cbar.set_label("log2(|I + jQ|^2)")
+    waterfall = np.zeros((COLUMN_SIZE, max_rows))
 
-    # Add Connect / Disconnect button to the bottom right
+    log_fh = open(args.log_file, "a") if args.log_file else None
+    if log_fh:
+        print(f"Logging spectrogram columns to {args.log_file}")
+
+    fig, ax = plt.subplots()
+    plt.subplots_adjust(bottom=0.2)
+
+    img = ax.imshow(waterfall, aspect="auto", cmap="inferno", origin="lower",
+                     extent=[0, max_rows, 0, COLUMN_SIZE], vmin=0, vmax=30)
+    ax.axhline(COLUMN_SIZE // 2, color="cyan", linewidth=1, linestyle="--",
+               alpha=0.6, label="DC (no motion)")
+    ax.legend(loc="upper right", fontsize=8)
+    ax.set_ylabel("Frequency bin (Doppler) -- center = DC / stationary")
+    ax.set_xlabel("Time (most recent column on the right)")
+    ax.set_title("Live radar spectrogram (on-chip STFT)")
+    cbar = fig.colorbar(img, ax=ax)
+    cbar.set_label("log2 magnitude (spectrogram value)")
+
     ax_btn = plt.axes([0.75, 0.05, 0.15, 0.075])
     initial_btn_text = 'Disconnect' if ser_manager.is_connected else 'Connect'
     btn = Button(ax_btn, initial_btn_text)
     btn.on_clicked(lambda event: ser_manager.toggle_connection(event, btn))
 
-    print(f"Started in DISCONNECTED mode. Click 'Connect' on the plot window to listen on {args.port} @ {args.baud} baud.")
-    print(f"FFT_SIZE={fft_size}, FFT_HOP={fft_hop}, ADC centered on {half_scale} ({args.adc_bits}-bit).")
-    print("Press Ctrl+C in the terminal to stop and save.")
+    print(f"Started in DISCONNECTED mode. Click 'Connect' to listen on {args.port} @ {args.baud} baud.")
+    print("Close the plot window (or Ctrl+C in the terminal) to stop.")
 
-    hop_i, hop_q = [], []
-    segment_count = 0
+    state = {"segment_count": 0, "tick": 0, "stop": False}
+
+    def on_tick(_frame):
+        nonlocal waterfall
+        if state["stop"]:
+            return (img,)
+
+        if not (ser_manager.is_connected and ser_manager.ser and ser_manager.ser.is_open):
+            return (img,)
+
+        try:
+            n_waiting = ser_manager.ser.in_waiting
+            if n_waiting:
+                parser.feed(ser_manager.ser.read(n_waiting))
+        except serial.SerialException:
+            print("\nConnection lost.")
+            ser_manager.toggle_connection(None, btn)
+            return (img,)
+
+        new_columns = parser.pop_columns()
+        if not new_columns:
+            return (img,)
+
+        for column in new_columns:
+            waterfall = np.roll(waterfall, -1, axis=1)
+            waterfall[:, -1] = column
+            state["segment_count"] += 1
+            if log_fh:
+                log_fh.write(" ".join(str(v) for v in column) + "\n")
+
+        if log_fh:
+            log_fh.flush()  # once per tick, not once per column -- cheap either way at this rate
+
+        img.set_data(waterfall)
+        state["tick"] += 1
+        if state["tick"] % 20 == 0:  # periodically re-tighten color scale, not every redraw
+            img.set_clim(waterfall.min(), waterfall.max())
+
+        if args.segments and state["segment_count"] >= args.segments:
+            print(f"\nCaptured requested {args.segments} columns.")
+            state["stop"] = True
+            plt.close(fig)
+
+        return (img,)
+
+    anim = FuncAnimation(fig, on_tick, interval=1000.0 / args.redraw_hz,
+                          cache_frame_data=False, blit=False)
 
     try:
-        while True:
-            # If connected, read data
-            if ser_manager.is_connected and ser_manager.ser and ser_manager.ser.is_open:
-                try:
-                    sample = read_sample(ser_manager.ser)
-                except serial.SerialException:
-                    print("\nConnection lost.")
-                    ser_manager.toggle_connection(None, btn)
-                    sample = None
-
-                if sample is None:
-                    # No data yet, pause briefly to keep UI responsive
-                    plt.pause(0.01)
-                    continue
-
-                ifi, ifq = sample
-                hop_i.append(ifi)
-                hop_q.append(ifq)
-
-                if len(hop_i) == fft_hop:
-                    # shift the window left by FFT_HOP and append the new hop --
-                    # same as the STFT_input_I/Q shift-and-append loop in main.c
-                    i_buf = np.concatenate([i_buf[fft_hop:], hop_i])
-                    q_buf = np.concatenate([q_buf[fft_hop:], hop_q])
-                    hop_i, hop_q = [], []
-
-                    segment = compute_segment(i_buf, q_buf, window, half_scale)
-                    segments.append(segment)
-                    segment_count += 1
-
-                    waterfall = np.roll(waterfall, -1, axis=1)
-                    waterfall[:, -1] = segment
-                    img.set_data(waterfall)
-                    img.set_clim(waterfall.min(), waterfall.max())
-                    fig.canvas.draw_idle()
-                    plt.pause(0.001)
-
-                    if args.segments and segment_count >= args.segments:
-                        print(f"\nCaptured requested {args.segments} segments.")
-                        break
-            else:
-                # Disconnected state: just keep the UI alive while waiting for the user to click 'Connect'
-                plt.pause(0.1)
-
+        plt.show()
     except KeyboardInterrupt:
-        print("\nStopped by user.")
+        pass
     finally:
         if ser_manager.ser and ser_manager.ser.is_open:
             ser_manager.ser.close()
-        save_spectrogram(segments, args.outfile)
-        plt.ioff()
-        print("Close the plot window to exit.")
-        plt.show()
+        if log_fh:
+            log_fh.close()
+        print(f"Total columns received: {state['segment_count']}")
+
 
 if __name__ == "__main__":
     main()

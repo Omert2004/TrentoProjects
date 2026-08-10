@@ -22,7 +22,34 @@
 #include "STFT.h"
 #include "window_q15.h"     // Q15 Hanning coefficients
 #include <DSPLib.h>
-#include <math.h>
+
+
+//******************************************************************************
+// Integer floor(log2(x)) for positive 32-bit x -- exact replacement for the
+// previous (int8_t)log2f((float)magnitude).
+//
+// Why this is a drop-in, lossless swap and not an approximation: the old
+// code immediately truncated log2f()'s float result to int8_t, which is
+// exactly floor(log2(x)) for positive x -- the fractional part was already
+// being thrown away. floor(log2(x)) is just "the index of the highest set
+// bit", computable with a handful of integer compares/shifts instead of a
+// software floating-point library call (this core has no FPU, so log2f()
+// was doing float normalization + iteration entirely in software -- the
+// dominant per-hop cost measured via the 0xC3 profiling frame: ~250-280 ms
+// of the ~250-330 ms per column was inside STFT_compute_next_segment(),
+// with DMA wait consistently measuring 0 ms).
+//
+// Binary-search bit-length, 5 compares worst case, all integer ops.
+static inline int8_t ilog2_u32(uint32_t x)
+{
+    int8_t n = 0;
+    if (x >= (1UL << 16)) { n += 16; x >>= 16; }
+    if (x >= (1UL << 8))  { n += 8;  x >>= 8;  }
+    if (x >= (1UL << 4))  { n += 4;  x >>= 4;  }
+    if (x >= (1UL << 2))  { n += 2;  x >>= 2;  }
+    if (x >= (1UL << 1))  { n += 1; }
+    return n;
+}
 
 
 //******************************************************************************
@@ -190,9 +217,12 @@ void STFT_compute_next_segment(uint16_t *stft_input_I, uint16_t *stft_input_Q)
     //
     // DSPLib has no LEA-accelerated complex-magnitude function (it's
     // absent from TI's own "LEA Supported APIs" table), so this stays a
-    // plain CPU loop -- same as the thesis's "r*r + i*i" computation,
-    // just reading from the interleaved Q15 buffer instead of a float
-    // array. This is cheap relative to the FFT itself.
+    // plain CPU loop. The log2 step uses ilog2_u32() (integer, see above)
+    // rather than log2f() -- measured via the firmware's 0xC3 profiling
+    // frame to be the dominant per-hop cost by a wide margin (log2f() is
+    // software floating-point on this FPU-less core, called up to 256x
+    // per segment). ilog2_u32() produces the identical result, since the
+    // old code's (int8_t) cast was already truncating to floor(log2(x)).
     //
     // (n + FFT_SIZE/2) % FFT_SIZE reproduces np.fft.fftshift /
     // the thesis's frequency-shift, putting DC in the middle of the row
@@ -205,7 +235,12 @@ void STFT_compute_next_segment(uint16_t *stft_input_I, uint16_t *stft_input_Q)
         int32_t magnitude = (int32_t)re * re + (int32_t)im * im;
 
         int nn = (n + FFT_SIZE / 2) % FFT_SIZE;
-        int8_t val = (magnitude > 0) ? (int8_t)log2f((float)magnitude) : 0;
+        int8_t val = (magnitude > 0) ? ilog2_u32((uint32_t)magnitude) : 0;
+        // ilog2_u32() only ever returns 0..31 (magnitude is at most ~2^31,
+        // see its own comment above), so val is never actually negative
+        // here -- this clamp is defensive, not something that can trigger
+        // in practice. Kept because it costs nothing and guards against
+        // magnitude someday overflowing int32_t if FFT_SIZE/scaling changes.
         spectrogram[STFT_SEGMENTS - 1][nn] = (val < 0) ? 0 : val;
     }
 }
