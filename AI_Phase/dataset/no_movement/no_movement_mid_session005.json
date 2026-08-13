@@ -1,0 +1,21 @@
+{
+  "gesture_class": "no_movement",
+  "distance": "mid",
+  "angle_deg": 0,
+  "speed": null,
+  "session_file": "no_movement_mid_session005.txt",
+  "timestamp": "2026-08-12T23:33:17",
+  "port": "COM7",
+  "baud": 115200,
+  "sampling_rate_hz": 4000,
+  "fft_size": 256,
+  "fft_hop": 128,
+  "stft_segments": 15,
+  "columns_captured": 1833,
+  "total_resyncs": 198,
+  "duration_seconds": 59.954,
+  "avg_column_rate_hz": 30.56,
+  "repeat_interval_sec": null,
+  "repeat_markers": [],
+  "notes": ""
+}

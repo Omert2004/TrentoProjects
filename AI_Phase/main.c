@@ -94,7 +94,9 @@ int main(void)
 
             // --- Profiling: time the STFT compute itself ---
             uint16_t t0 = TA1R;
+            ADC12_B_disableInterrupt(ADC12_B_BASE, ADC12_B_IE1, 0, 0);
             STFT_compute_next_segment(STFT_input_I, STFT_input_Q);
+            ADC12_B_enableInterrupt(ADC12_B_BASE, ADC12_B_IE1, 0, 0);
             uint16_t t1 = TA1R;
             // TA1 runs in up-mode with CCR0 = 32767 (32768 ticks -> wraps
             // at 0x8000). Masking the subtraction to 15 bits gives the

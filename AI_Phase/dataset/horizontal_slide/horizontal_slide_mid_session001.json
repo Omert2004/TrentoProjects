@@ -1,0 +1,21 @@
+{
+  "gesture_class": "horizontal_slide",
+  "distance": "mid",
+  "angle_deg": 0,
+  "speed": null,
+  "session_file": "horizontal_slide_mid_session001.txt",
+  "timestamp": "2026-08-13T00:13:43",
+  "port": "COM7",
+  "baud": 115200,
+  "sampling_rate_hz": 4000,
+  "fft_size": 256,
+  "fft_hop": 128,
+  "stft_segments": 15,
+  "columns_captured": 593,
+  "total_resyncs": 257,
+  "duration_seconds": 20.171,
+  "avg_column_rate_hz": 29.35,
+  "repeat_interval_sec": null,
+  "repeat_markers": [],
+  "notes": ""
+}

@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v21.6.2                     
 ******************************************************************************
->> Linked Mon Aug 10 01:15:28 2026
+>> Linked Thu Aug 13 00:18:51 2026
 
 OUTPUT FILE NAME:   <AI_Phase.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs_mpu"  address: 0000508a
@@ -80,7 +80,7 @@ MEMORY CONFIGURATION
   INT53                 0000fffa   00000002  00000002  00000000  RWIX
   INT54                 0000fffc   00000002  00000002  00000000  RWIX
   RESET                 0000fffe   00000002  00000002  00000000  RWIX
-  FRAM2                 00010000   00033ff8  00001610  000329e8  RWIX
+  FRAM2                 00010000   00033ff8  00001650  000329a8  RWIX
 
 
 SECTION ALLOCATION MAP
@@ -302,76 +302,77 @@ SYSNMI     0    0000fffc    00000002
                   000054be    0000000a     radar_configuration.obj (.const:$P$T7$8)
                   000054c8    00000008     radar_configuration.obj (.const:$P$T5$6)
 
-.text      0    00010000    00001610     
+.text      0    00010000    00001650     
                   00010000    000002b8     STFT.obj (.text:STFT_compute_next_segment)
                   000102b8    000001bc     msp_interleave_q15.obj (.text:msp_interleave_q15)
-                  00010474    00000190     main.obj (.text:main)
-                  00010604    0000014c     msp_cmplx_fft_fixed_q15.obj (.text:msp_cmplx_fft_fixed_q15)
-                  00010750    00000140     cs.obj (.text:CS_setDCOFreq)
-                  00010890    00000134     msp_cmplx_bitrev_q15.obj (.text:msp_cmplx_bitrev_q15)
-                  000109c4    000000de     radar_configuration.obj (.text:Init_ADC)
-                  00010aa2    0000009c     msp_lea_patch.obj (.text:msp_lea_loadCommand)
-                  00010b3e    0000009a     eusci_a_uart.obj (.text:EUSCI_A_UART_init)
-                  00010bd8    00000098     adc12_b.obj (.text:ADC12_B_init)
-                  00010c70    0000008c     radar_configuration.obj (.text:Init_TIMER)
-                  00010cfc    00000082     dma.obj (.text:DMA_init)
-                  00010d7e    0000007c     timer_a.obj (.text:Timer_A_initUpMode)
-                  00010dfa    00000076     rts430x_lc_rd_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
-                  00010e70    00000072     gpio.obj (.text:GPIO_setAsPeripheralModuleFunctionInputPin)
-                  00010ee2    0000006a     cs.obj (.text:CS_initClockSignal)
-                  00010f4c    00000068     radar_configuration.obj (.text:UART_putSpectrogramColumn_DMA)
-                  00010fb4    00000056     radar_configuration.obj (.text:Init_DMA)
-                  0001100a    00000054     radar_configuration.obj (.text:Init_UART)
-                  0001105e    00000054     rts430x_lc_rd_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
-                  000110b2    00000052     radar_configuration.obj (.text:UART_putProfileFrame)
-                  00011104    00000052     msp_lea_init.obj (.text:msp_lea_init)
-                  00011156    00000050     adc12_b.obj (.text:ADC12_B_configureMemory)
-                  000111a6    00000050     radar_configuration.obj (.text:Init_RateTimer)
-                  000111f6    00000046     radar_configuration.obj (.text:Init_Clock)
-                  0001123c    00000044     msp_lea_patch.obj (.text:msp_lea_getRevision)
-                  00011280    0000003e     rts430x_lc_rd_eabi.lib : lsr32.asm.obj (.text:l_lsr_const)
-                  000112be    0000003e     msp_cmplx_q15.obj (.text:msp_cmplx_q15)
-                  000112fc    0000003a     cs.obj (.text:CS_turnOnLFXT)
-                  00011336    00000038     timer_a.obj (.text:Timer_A_initCompareMode)
-                  0001136e    00000038     msp_cmplx_mpy_real_q15.obj (.text:msp_cmplx_mpy_real_q15)
-                  000113a6    00000030     dma.obj (.text:DMA_setDstAddress)
-                  000113d6    00000030     radar_configuration.obj (.text:Init_GPIO)
-                  00011406    0000002e     dma.obj (.text:DMA_setSrcAddress)
-                  00011434    0000002e     radar_configuration.obj (.text:UART_putCountFrame)
-                  00011462    0000002c     MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib : mpu_init.o (.text:__mpu_init)
-                  0001148e    00000026     adc12_b.obj (.text:ADC12_B_setupSamplingTimer)
-                  000114b4    00000024     adc12_b.obj (.text:ADC12_B_enableInterrupt)
-                  000114d8    00000024     rts430x_lc_rd_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init)
-                  000114fc    0000001c                            : mult1632_f5hw.asm.obj (.text:__mpysl)
-                  00011518    00000014     adc12_b.obj (.text:ADC12_B_clearInterrupt)
-                  0001152c    00000014     rts430x_lc_rd_eabi.lib : memcpy.c.obj (.text:memcpy)
-                  00011540    00000012     cs.obj (.text:CS_setExternalClockSource)
-                  00011552    00000012     wdt_a.obj (.text:WDT_A_resetTimer)
-                  00011564    00000012     wdt_a.obj (.text:WDT_A_start)
-                  00011576    00000012     rts430x_lc_rd_eabi.lib : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
-                  00011588    00000010     dma.obj (.text:DMA_enableTransfers)
-                  00011598    00000010     wdt_a.obj (.text:WDT_A_initWatchdogTimer)
-                  000115a8    0000000e     dma.obj (.text:DMA_clearInterrupt)
-                  000115b6    0000000e     dma.obj (.text:DMA_enableInterrupt)
-                  000115c4    0000000e     radar_configuration.obj (.text:UART_putc)
-                  000115d2    0000000c     adc12_b.obj (.text:ADC12_B_enable)
-                  000115de    0000000c     dma.obj (.text:DMA_setTransferSize)
-                  000115ea    0000000c     timer_a.obj (.text:Timer_A_startCounter)
-                  000115f6    00000006     eusci_a_uart.obj (.text:EUSCI_A_UART_enable)
-                  000115fc    00000006     pmm.obj (.text:PMM_unlockLPM5)
-                  00011602    00000006     rts430x_lc_rd_eabi.lib : exit.c.obj (.text:abort)
-                  00011608    00000004                            : pre_init.c.obj (.text:_system_pre_init)
-                  0001160c    00000002     STFT.obj (.text:STFT_init)
-                  0001160e    00000002     rts430x_lc_rd_eabi.lib : startup.c.obj (.text:_system_post_cinit)
+                  00010474    000001ac     main.obj (.text:main)
+                  00010620    0000014c     msp_cmplx_fft_fixed_q15.obj (.text:msp_cmplx_fft_fixed_q15)
+                  0001076c    00000140     cs.obj (.text:CS_setDCOFreq)
+                  000108ac    00000134     msp_cmplx_bitrev_q15.obj (.text:msp_cmplx_bitrev_q15)
+                  000109e0    000000de     radar_configuration.obj (.text:Init_ADC)
+                  00010abe    0000009c     msp_lea_patch.obj (.text:msp_lea_loadCommand)
+                  00010b5a    0000009a     eusci_a_uart.obj (.text:EUSCI_A_UART_init)
+                  00010bf4    00000098     adc12_b.obj (.text:ADC12_B_init)
+                  00010c8c    0000008c     radar_configuration.obj (.text:Init_TIMER)
+                  00010d18    00000082     dma.obj (.text:DMA_init)
+                  00010d9a    0000007c     timer_a.obj (.text:Timer_A_initUpMode)
+                  00010e16    00000076     rts430x_lc_rd_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
+                  00010e8c    00000072     gpio.obj (.text:GPIO_setAsPeripheralModuleFunctionInputPin)
+                  00010efe    0000006a     cs.obj (.text:CS_initClockSignal)
+                  00010f68    00000068     radar_configuration.obj (.text:UART_putSpectrogramColumn_DMA)
+                  00010fd0    00000056     radar_configuration.obj (.text:Init_DMA)
+                  00011026    00000054     radar_configuration.obj (.text:Init_UART)
+                  0001107a    00000054     rts430x_lc_rd_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
+                  000110ce    00000052     radar_configuration.obj (.text:UART_putProfileFrame)
+                  00011120    00000052     msp_lea_init.obj (.text:msp_lea_init)
+                  00011172    00000050     adc12_b.obj (.text:ADC12_B_configureMemory)
+                  000111c2    00000050     radar_configuration.obj (.text:Init_RateTimer)
+                  00011212    00000046     radar_configuration.obj (.text:Init_Clock)
+                  00011258    00000044     msp_lea_patch.obj (.text:msp_lea_getRevision)
+                  0001129c    0000003e     rts430x_lc_rd_eabi.lib : lsr32.asm.obj (.text:l_lsr_const)
+                  000112da    0000003e     msp_cmplx_q15.obj (.text:msp_cmplx_q15)
+                  00011318    0000003a     cs.obj (.text:CS_turnOnLFXT)
+                  00011352    00000038     timer_a.obj (.text:Timer_A_initCompareMode)
+                  0001138a    00000038     msp_cmplx_mpy_real_q15.obj (.text:msp_cmplx_mpy_real_q15)
+                  000113c2    00000030     dma.obj (.text:DMA_setDstAddress)
+                  000113f2    00000030     radar_configuration.obj (.text:Init_GPIO)
+                  00011422    0000002e     dma.obj (.text:DMA_setSrcAddress)
+                  00011450    0000002e     radar_configuration.obj (.text:UART_putCountFrame)
+                  0001147e    0000002c     MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib : mpu_init.o (.text:__mpu_init)
+                  000114aa    00000026     adc12_b.obj (.text:ADC12_B_setupSamplingTimer)
+                  000114d0    00000024     adc12_b.obj (.text:ADC12_B_disableInterrupt)
+                  000114f4    00000024     adc12_b.obj (.text:ADC12_B_enableInterrupt)
+                  00011518    00000024     rts430x_lc_rd_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init)
+                  0001153c    0000001c                            : mult1632_f5hw.asm.obj (.text:__mpysl)
+                  00011558    00000014     adc12_b.obj (.text:ADC12_B_clearInterrupt)
+                  0001156c    00000014     rts430x_lc_rd_eabi.lib : memcpy.c.obj (.text:memcpy)
+                  00011580    00000012     cs.obj (.text:CS_setExternalClockSource)
+                  00011592    00000012     wdt_a.obj (.text:WDT_A_resetTimer)
+                  000115a4    00000012     wdt_a.obj (.text:WDT_A_start)
+                  000115b6    00000012     rts430x_lc_rd_eabi.lib : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  000115c8    00000010     dma.obj (.text:DMA_enableTransfers)
+                  000115d8    00000010     wdt_a.obj (.text:WDT_A_initWatchdogTimer)
+                  000115e8    0000000e     dma.obj (.text:DMA_clearInterrupt)
+                  000115f6    0000000e     dma.obj (.text:DMA_enableInterrupt)
+                  00011604    0000000e     radar_configuration.obj (.text:UART_putc)
+                  00011612    0000000c     adc12_b.obj (.text:ADC12_B_enable)
+                  0001161e    0000000c     dma.obj (.text:DMA_setTransferSize)
+                  0001162a    0000000c     timer_a.obj (.text:Timer_A_startCounter)
+                  00011636    00000006     eusci_a_uart.obj (.text:EUSCI_A_UART_enable)
+                  0001163c    00000006     pmm.obj (.text:PMM_unlockLPM5)
+                  00011642    00000006     rts430x_lc_rd_eabi.lib : exit.c.obj (.text:abort)
+                  00011648    00000004                            : pre_init.c.obj (.text:_system_pre_init)
+                  0001164c    00000002     STFT.obj (.text:STFT_init)
+                  0001164e    00000002     rts430x_lc_rd_eabi.lib : startup.c.obj (.text:_system_post_cinit)
 
 MODULE SUMMARY
 
        Module                        code   ro data   rw data
        ------                        ----   -------   -------
     .\
-       main.obj                      564    8         1025   
+       main.obj                      592    8         1025   
     +--+-----------------------------+------+---------+---------+
-       Total:                        564    8         1025   
+       Total:                        592    8         1025   
                                                              
     .\DSPLib_1_30_00_02\source\lea\
        msp_lea_patch.obj             224    368       16     
@@ -400,7 +401,7 @@ MODULE SUMMARY
                                                              
     .\driverlib\MSP430FR5xx_6xx\
        cs.obj                        502    0         8      
-       adc12_b.obj                   338    0         0      
+       adc12_b.obj                   374    0         0      
        dma.obj                       280    0         0      
        timer_a.obj                   192    0         0      
        eusci_a_uart.obj              160    0         0      
@@ -408,7 +409,7 @@ MODULE SUMMARY
        wdt_a.obj                     52     0         0      
        pmm.obj                       6      0         0      
     +--+-----------------------------+------+---------+---------+
-       Total:                        1644   28        8      
+       Total:                        1680   28        8      
                                                              
     .\src\
        STFT.obj                      698    0         5888   
@@ -473,7 +474,7 @@ MODULE SUMMARY
        Stack:                        0      0         160    
        Linker Generated:             0      56        0      
     +--+-----------------------------+------+---------+---------+
-       Grand Total:                  5880   1132      9436   
+       Grand Total:                  5944   1132      9436   
 
 
 LINKER GENERATED COPY TABLES
@@ -728,12 +729,13 @@ address   name
 00000873  ADC12MEM9_H                               
 00000872  ADC12MEM9_L                               
 00005000  ADC12_B_ISR                               
-00011518  ADC12_B_clearInterrupt                    
-00011156  ADC12_B_configureMemory                   
-000115d2  ADC12_B_enable                            
-000114b4  ADC12_B_enableInterrupt                   
-00010bd8  ADC12_B_init                              
-0001148e  ADC12_B_setupSamplingTimer                
+00011558  ADC12_B_clearInterrupt                    
+00011172  ADC12_B_configureMemory                   
+000114d0  ADC12_B_disableInterrupt                  
+00011612  ADC12_B_enable                            
+000114f4  ADC12_B_enableInterrupt                   
+00010bf4  ADC12_B_init                              
+000114aa  ADC12_B_setupSamplingTimer                
 000009c0  AESACTL0                                  
 000009c1  AESACTL0_H                                
 000009c0  AESACTL0_L                                
@@ -764,7 +766,7 @@ address   name
 000004bc  BIN2BCD                                   
 000004bd  BIN2BCD_H                                 
 000004bc  BIN2BCD_L                                 
-00011602  C$$EXIT                                   
+00011642  C$$EXIT                                   
 0000043e  CAPTIO0CTL                                
 0000043f  CAPTIO0CTL_H                              
 0000043e  CAPTIO0CTL_L                              
@@ -858,10 +860,10 @@ address   name
 0000016c  CSCTL6                                    
 0000016d  CSCTL6_H                                  
 0000016c  CSCTL6_L                                  
-00010ee2  CS_initClockSignal                        
-00010750  CS_setDCOFreq                             
-00011540  CS_setExternalClockSource                 
-000112fc  CS_turnOnLFXT                             
+00010efe  CS_initClockSignal                        
+0001076c  CS_setDCOFreq                             
+00011580  CS_setExternalClockSource                 
+00011318  CS_turnOnLFXT                             
 00000510  DMA0CTL                                   
 00000511  DMA0CTL_H                                 
 00000510  DMA0CTL_L                                 
@@ -950,15 +952,15 @@ address   name
 0000050f  DMAIV_H                                   
 0000050e  DMAIV_L                                   
 000050c6  DMA_ISR                                   
-000115a8  DMA_clearInterrupt                        
-000115b6  DMA_enableInterrupt                       
-00011588  DMA_enableTransfers                       
-00010cfc  DMA_init                                  
-000113a6  DMA_setDstAddress                         
-00011406  DMA_setSrcAddress                         
-000115de  DMA_setTransferSize                       
-000115f6  EUSCI_A_UART_enable                       
-00010b3e  EUSCI_A_UART_init                         
+000115e8  DMA_clearInterrupt                        
+000115f6  DMA_enableInterrupt                       
+000115c8  DMA_enableTransfers                       
+00010d18  DMA_init                                  
+000113c2  DMA_setDstAddress                         
+00011422  DMA_setSrcAddress                         
+0001161e  DMA_setTransferSize                       
+00011636  EUSCI_A_UART_enable                       
+00010b5a  EUSCI_A_UART_init                         
 00000140  FRCTL0                                    
 00000141  FRCTL0_H                                  
 00000140  FRCTL0_L                                  
@@ -968,17 +970,17 @@ address   name
 00000146  GCCTL1                                    
 00000147  GCCTL1_H                                  
 00000146  GCCTL1_L                                  
-00010e70  GPIO_setAsPeripheralModuleFunctionInputPin
+00010e8c  GPIO_setAsPeripheralModuleFunctionInputPin
 00002918  IFI_result                                
 0000291a  IFQ_result                                
 00001c00  I_queue                                   
-000109c4  Init_ADC                                  
-000111f6  Init_Clock                                
-00010fb4  Init_DMA                                  
-000113d6  Init_GPIO                                 
-000111a6  Init_RateTimer                            
-00010c70  Init_TIMER                                
-0001100a  Init_UART                                 
+000109e0  Init_ADC                                  
+00011212  Init_Clock                                
+00010fd0  Init_DMA                                  
+000113f2  Init_GPIO                                 
+000111c2  Init_RateTimer                            
+00010c8c  Init_TIMER                                
+00011026  Init_UART                                 
 00000a80  LEACAP                                    
 00000a82  LEACAPH                                   
 00000a80  LEACAPL                                   
@@ -1415,7 +1417,7 @@ address   name
 0000012a  PMMIFG                                    
 0000012b  PMMIFG_H                                  
 0000012a  PMMIFG_L                                  
-000115fc  PMM_unlockLPM5                            
+0001163c  PMM_unlockLPM5                            
 00002000  Q_queue                                   
 00000158  RCCTL0                                    
 00000159  RCCTL0_H                                  
@@ -1505,7 +1507,7 @@ address   name
 00000105  SFRRPCR_H                                 
 00000104  SFRRPCR_L                                 
 00010000  STFT_compute_next_segment                 
-0001160c  STFT_init                                 
+0001164c  STFT_init                                 
 000004ce  SUMEXT                                    
 000004cf  SUMEXT_H                                  
 000004ce  SUMEXT_L                                  
@@ -1730,13 +1732,13 @@ address   name
 000003d0  TB0R_L                                    
 00005052  TIMER1_A0_ISR                             
 000050d8  TIMER2_A0_ISR                             
-00011336  Timer_A_initCompareMode                   
-00010d7e  Timer_A_initUpMode                        
-000115ea  Timer_A_startCounter                      
-00011434  UART_putCountFrame                        
-000110b2  UART_putProfileFrame                      
-00010f4c  UART_putSpectrogramColumn_DMA             
-000115c4  UART_putc                                 
+00011352  Timer_A_initCompareMode                   
+00010d9a  Timer_A_initUpMode                        
+0001162a  Timer_A_startCounter                      
+00011450  UART_putCountFrame                        
+000110ce  UART_putProfileFrame                      
+00010f68  UART_putSpectrogramColumn_DMA             
+00011604  UART_putc                                 
 000005d0  UCA0ABCTL                                 
 000005d1  UCA0ABCTL_H                               
 000005d0  UCA0ABCTL_L                               
@@ -2088,9 +2090,9 @@ address   name
 0000015c  WDTCTL                                    
 0000015d  WDTCTL_H                                  
 0000015c  WDTCTL_L                                  
-00011598  WDT_A_initWatchdogTimer                   
-00011552  WDT_A_resetTimer                          
-00011564  WDT_A_start                               
+000115d8  WDT_A_initWatchdogTimer                   
+00011592  WDT_A_resetTimer                          
+000115a4  WDT_A_start                               
 00002c00  __STACK_END                               
 000000a0  __STACK_SIZE                              
 000054f0  __TI_CINIT_Base                           
@@ -2099,9 +2101,9 @@ address   name
 000054d0  __TI_Handler_Table_Base                   
 000054dc  __TI_Handler_Table_Limit                  
 000050e0  __TI_ISR_TRAP                             
-0001105e  __TI_auto_init_nobinit_nopinit_hold_wdt   
-00010dfa  __TI_decompress_lzss                      
-00011576  __TI_decompress_none                      
+0001107a  __TI_auto_init_nobinit_nopinit_hold_wdt   
+00010e16  __TI_decompress_lzss                      
+000115b6  __TI_decompress_none                      
 0000ffb4  __TI_int18                                
 0000ffb6  __TI_int19                                
 0000ffb8  __TI_int20                                
@@ -2142,32 +2144,32 @@ address   name
 ffffffff  __TI_pprof_out_hndl                       
 ffffffff  __TI_prof_data_size                       
 ffffffff  __TI_prof_data_start                      
-000114d8  __TI_zero_init                            
+00011518  __TI_zero_init                            
 ffffffff  __c_args__                                
 00000001  __mpu_enable                              
-00011462  __mpu_init                                
-000114fc  __mspabi_mpysl_f5hw                       
-000112b8  __mspabi_srll_1                           
-00011294  __mspabi_srll_10                          
-00011290  __mspabi_srll_11                          
-0001128c  __mspabi_srll_12                          
-00011288  __mspabi_srll_13                          
-00011284  __mspabi_srll_14                          
-00011280  __mspabi_srll_15                          
-000112b4  __mspabi_srll_2                           
-000112b0  __mspabi_srll_3                           
-000112ac  __mspabi_srll_4                           
-000112a8  __mspabi_srll_5                           
-000112a4  __mspabi_srll_6                           
-000112a0  __mspabi_srll_7                           
-0001129c  __mspabi_srll_8                           
-00011298  __mspabi_srll_9                           
+0001147e  __mpu_init                                
+0001153c  __mspabi_mpysl_f5hw                       
+000112d4  __mspabi_srll_1                           
+000112b0  __mspabi_srll_10                          
+000112ac  __mspabi_srll_11                          
+000112a8  __mspabi_srll_12                          
+000112a4  __mspabi_srll_13                          
+000112a0  __mspabi_srll_14                          
+0001129c  __mspabi_srll_15                          
+000112d0  __mspabi_srll_2                           
+000112cc  __mspabi_srll_3                           
+000112c8  __mspabi_srll_4                           
+000112c4  __mspabi_srll_5                           
+000112c0  __mspabi_srll_6                           
+000112bc  __mspabi_srll_7                           
+000112b8  __mspabi_srll_8                           
+000112b4  __mspabi_srll_9                           
 0000508a  _c_int00_noargs_mpu                       
 0000fffe  _reset_vector                             
 00002b60  _stack                                    
-0001160e  _system_post_cinit                        
-00011608  _system_pre_init                          
-00011602  abort                                     
+0001164e  _system_post_cinit                        
+00011648  _system_pre_init                          
+00011642  abort                                     
 00002920  adc_sample_count                          
 00002c00  cmplx_buf                                 
 00002922  count_snapshot                            
@@ -2182,21 +2184,21 @@ ffffffff  __c_args__
 0000292a  hop_count_accum                           
 00002930  hop_count_snapshot                        
 00010474  main                                      
-0001152c  memcpy                                    
+0001156c  memcpy                                    
 0000a501  mpu_ctl0_value                            
 00001513  mpu_sam_value                             
 00000500  mpu_segment_border1                       
 00000500  mpu_segment_border2                       
-00010890  msp_cmplx_bitrev_q15                      
-00010604  msp_cmplx_fft_fixed_q15                   
-0001136e  msp_cmplx_mpy_real_q15                    
-000112be  msp_cmplx_q15                             
+000108ac  msp_cmplx_bitrev_q15                      
+00010620  msp_cmplx_fft_fixed_q15                   
+0001138a  msp_cmplx_mpy_real_q15                    
+000112da  msp_cmplx_q15                             
 000102b8  msp_interleave_q15                        
-0001123c  msp_lea_getRevision                       
+00011258  msp_lea_getRevision                       
 00002914  msp_lea_ifg                               
-00011104  msp_lea_init                              
+00011120  msp_lea_init                              
 000050aa  msp_lea_isr                               
-00010aa2  msp_lea_loadCommand                       
+00010abe  msp_lea_loadCommand                       
 00002916  msp_lea_locked                            
 00002932  profile_snapshot_ready                    
 0000291c  samples_index_in                          
@@ -3844,81 +3846,82 @@ address   name
 00010000  STFT_compute_next_segment                 
 000102b8  msp_interleave_q15                        
 00010474  main                                      
-00010604  msp_cmplx_fft_fixed_q15                   
-00010750  CS_setDCOFreq                             
-00010890  msp_cmplx_bitrev_q15                      
-000109c4  Init_ADC                                  
-00010aa2  msp_lea_loadCommand                       
-00010b3e  EUSCI_A_UART_init                         
-00010bd8  ADC12_B_init                              
-00010c70  Init_TIMER                                
-00010cfc  DMA_init                                  
-00010d7e  Timer_A_initUpMode                        
-00010dfa  __TI_decompress_lzss                      
-00010e70  GPIO_setAsPeripheralModuleFunctionInputPin
-00010ee2  CS_initClockSignal                        
-00010f4c  UART_putSpectrogramColumn_DMA             
-00010fb4  Init_DMA                                  
-0001100a  Init_UART                                 
-0001105e  __TI_auto_init_nobinit_nopinit_hold_wdt   
-000110b2  UART_putProfileFrame                      
-00011104  msp_lea_init                              
-00011156  ADC12_B_configureMemory                   
-000111a6  Init_RateTimer                            
-000111f6  Init_Clock                                
-0001123c  msp_lea_getRevision                       
-00011280  __mspabi_srll_15                          
-00011284  __mspabi_srll_14                          
-00011288  __mspabi_srll_13                          
-0001128c  __mspabi_srll_12                          
-00011290  __mspabi_srll_11                          
-00011294  __mspabi_srll_10                          
-00011298  __mspabi_srll_9                           
-0001129c  __mspabi_srll_8                           
-000112a0  __mspabi_srll_7                           
-000112a4  __mspabi_srll_6                           
-000112a8  __mspabi_srll_5                           
-000112ac  __mspabi_srll_4                           
-000112b0  __mspabi_srll_3                           
-000112b4  __mspabi_srll_2                           
-000112b8  __mspabi_srll_1                           
-000112be  msp_cmplx_q15                             
-000112fc  CS_turnOnLFXT                             
-00011336  Timer_A_initCompareMode                   
-0001136e  msp_cmplx_mpy_real_q15                    
-000113a6  DMA_setDstAddress                         
-000113d6  Init_GPIO                                 
-00011406  DMA_setSrcAddress                         
-00011434  UART_putCountFrame                        
-00011462  __mpu_init                                
-0001148e  ADC12_B_setupSamplingTimer                
-000114b4  ADC12_B_enableInterrupt                   
-000114d8  __TI_zero_init                            
-000114fc  __mspabi_mpysl_f5hw                       
-00011518  ADC12_B_clearInterrupt                    
-0001152c  memcpy                                    
-00011540  CS_setExternalClockSource                 
-00011552  WDT_A_resetTimer                          
-00011564  WDT_A_start                               
-00011576  __TI_decompress_none                      
-00011588  DMA_enableTransfers                       
-00011598  WDT_A_initWatchdogTimer                   
-000115a8  DMA_clearInterrupt                        
-000115b6  DMA_enableInterrupt                       
-000115c4  UART_putc                                 
-000115d2  ADC12_B_enable                            
-000115de  DMA_setTransferSize                       
-000115ea  Timer_A_startCounter                      
-000115f6  EUSCI_A_UART_enable                       
-000115fc  PMM_unlockLPM5                            
-00011602  C$$EXIT                                   
-00011602  abort                                     
-00011608  _system_pre_init                          
-0001160c  STFT_init                                 
-0001160e  _system_post_cinit                        
+00010620  msp_cmplx_fft_fixed_q15                   
+0001076c  CS_setDCOFreq                             
+000108ac  msp_cmplx_bitrev_q15                      
+000109e0  Init_ADC                                  
+00010abe  msp_lea_loadCommand                       
+00010b5a  EUSCI_A_UART_init                         
+00010bf4  ADC12_B_init                              
+00010c8c  Init_TIMER                                
+00010d18  DMA_init                                  
+00010d9a  Timer_A_initUpMode                        
+00010e16  __TI_decompress_lzss                      
+00010e8c  GPIO_setAsPeripheralModuleFunctionInputPin
+00010efe  CS_initClockSignal                        
+00010f68  UART_putSpectrogramColumn_DMA             
+00010fd0  Init_DMA                                  
+00011026  Init_UART                                 
+0001107a  __TI_auto_init_nobinit_nopinit_hold_wdt   
+000110ce  UART_putProfileFrame                      
+00011120  msp_lea_init                              
+00011172  ADC12_B_configureMemory                   
+000111c2  Init_RateTimer                            
+00011212  Init_Clock                                
+00011258  msp_lea_getRevision                       
+0001129c  __mspabi_srll_15                          
+000112a0  __mspabi_srll_14                          
+000112a4  __mspabi_srll_13                          
+000112a8  __mspabi_srll_12                          
+000112ac  __mspabi_srll_11                          
+000112b0  __mspabi_srll_10                          
+000112b4  __mspabi_srll_9                           
+000112b8  __mspabi_srll_8                           
+000112bc  __mspabi_srll_7                           
+000112c0  __mspabi_srll_6                           
+000112c4  __mspabi_srll_5                           
+000112c8  __mspabi_srll_4                           
+000112cc  __mspabi_srll_3                           
+000112d0  __mspabi_srll_2                           
+000112d4  __mspabi_srll_1                           
+000112da  msp_cmplx_q15                             
+00011318  CS_turnOnLFXT                             
+00011352  Timer_A_initCompareMode                   
+0001138a  msp_cmplx_mpy_real_q15                    
+000113c2  DMA_setDstAddress                         
+000113f2  Init_GPIO                                 
+00011422  DMA_setSrcAddress                         
+00011450  UART_putCountFrame                        
+0001147e  __mpu_init                                
+000114aa  ADC12_B_setupSamplingTimer                
+000114d0  ADC12_B_disableInterrupt                  
+000114f4  ADC12_B_enableInterrupt                   
+00011518  __TI_zero_init                            
+0001153c  __mspabi_mpysl_f5hw                       
+00011558  ADC12_B_clearInterrupt                    
+0001156c  memcpy                                    
+00011580  CS_setExternalClockSource                 
+00011592  WDT_A_resetTimer                          
+000115a4  WDT_A_start                               
+000115b6  __TI_decompress_none                      
+000115c8  DMA_enableTransfers                       
+000115d8  WDT_A_initWatchdogTimer                   
+000115e8  DMA_clearInterrupt                        
+000115f6  DMA_enableInterrupt                       
+00011604  UART_putc                                 
+00011612  ADC12_B_enable                            
+0001161e  DMA_setTransferSize                       
+0001162a  Timer_A_startCounter                      
+00011636  EUSCI_A_UART_enable                       
+0001163c  PMM_unlockLPM5                            
+00011642  C$$EXIT                                   
+00011642  abort                                     
+00011648  _system_pre_init                          
+0001164c  STFT_init                                 
+0001164e  _system_post_cinit                        
 ffffffff  __TI_pprof_out_hndl                       
 ffffffff  __TI_prof_data_size                       
 ffffffff  __TI_prof_data_start                      
 ffffffff  __c_args__                                
 
-[1709 symbols]
+[1710 symbols]
