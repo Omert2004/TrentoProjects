@@ -18,20 +18,39 @@
 // rolling image that gets fed to the CNN classifier.
 #define STFT_SEGMENTS 15
 
-// The rolling spectrogram image: STFT_SEGMENTS columns x FFT_SIZE
-// frequency bins. int8_t because the CNN input in the original thesis
-// design expects a small quantized image, not full-precision magnitudes.
+//******************************************************************************
+// Clutter cancellation (fast-time high-pass, single-delay canceller):
+// y[n] = x[n] - x[n-1], applied to each NEW raw ADC sample once, before it
+// enters the STFT window. Nulls zero-Doppler (static-reflector) content at
+// the source instead of relying on windowing/guard-banding to hide it
+// after the FFT. See main.c's shift-and-append loop for the actual
+// differencing -- it needs the persistent previous-sample state across
+// hops, which only exists there.
+//
+// Set to 0 to fall back to the original centered-raw-sample behavior for
+// a direct A/B comparison (do this for closed_fist -- a hard zero-Doppler
+// null can also attenuate genuine very-slow motion, not just clutter).
+//******************************************************************************
+#define ENABLE_CLUTTER_CANCEL 1
+
+// Left-shift applied to the (much smaller) difference values before they
+// enter the Q15 pipeline, replacing the old raw-centering <<4.
+//
+// NEEDS EMPIRICAL TUNING ON HARDWARE. Consecutive-sample diffs of a slow
+// baseband signal at 4 kHz are typically just a handful of ADC LSBs, so a
+// bigger shift than <<4 is very likely needed to use the Q15 range well
+// -- but too big and clamp_q15() (STFT.c) will start saturating,
+// flattening real signal. Start with a capture, check the actual
+// magnitude range hitting this shift (temporarily log it), and pick the
+// largest shift that doesn't visibly clip a real gesture repetition.
+#define DIFF_SHIFT 8
+
 extern int8_t spectrogram[STFT_SEGMENTS][FFT_SIZE];
 
-// One-time setup (currently a placeholder -- see STFT.c for what it could
-// do if you want to add an LEA revision check later).
 void STFT_init(void);
 
-// Call this once you have FFT_SIZE fresh raw ADC samples in stft_input_I/Q
-// (after the ring-buffer shift-and-append step in main.c). It:
-//   1. Shifts the spectrogram left to make room for a new column
-//   2. Centers + windows + FFTs the new window of samples
-//   3. Writes the new log-magnitude column into spectrogram[STFT_SEGMENTS-1]
-void STFT_compute_next_segment(uint16_t *stft_input_I, uint16_t *stft_input_Q);
+// stft_input_I/Q are now SIGNED -- either raw-centered values (filter off)
+// or difference values (filter on). See main.c.
+void STFT_compute_next_segment(int16_t *stft_input_I, int16_t *stft_input_Q);
 
 #endif // STFT_H

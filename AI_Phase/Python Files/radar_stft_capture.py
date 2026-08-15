@@ -44,6 +44,7 @@ RATE_MARKER = 0xC2        # 1 Hz ADC-rate snapshot, 2-byte body -- parsed & disc
 PROFILE_MARKER = 0xC3     # STFT/DMA timing snapshot, 6-byte body -- parsed & discarded here
 COLUMN_SIZE = 256         # FFT_SIZE
 HEADER_SIZE = 3           # [0xAA][0x55][marker]
+DC_GUARD = 5              # bins excluded on each side of center to suppress the static clutter peak
 
 
 def parse_args():
@@ -169,6 +170,12 @@ def main():
                      extent=[0, max_rows, 0, COLUMN_SIZE], vmin=0, vmax=30)
     ax.axhline(COLUMN_SIZE // 2, color="cyan", linewidth=1, linestyle="--",
                alpha=0.6, label="DC (no motion)")
+    
+    # Optional: Draw horizontal lines representing the boundary of the DC Guard
+    center = COLUMN_SIZE // 2
+    ax.axhline(center + DC_GUARD, color="white", linewidth=0.5, linestyle=":", alpha=0.4)
+    ax.axhline(center - DC_GUARD, color="white", linewidth=0.5, linestyle=":", alpha=0.4, label="DC Guard Band")
+
     ax.legend(loc="upper right", fontsize=8)
     ax.set_ylabel("Frequency bin (Doppler) -- center = DC / stationary")
     ax.set_xlabel("Time (most recent column on the right)")
@@ -208,9 +215,17 @@ def main():
             return (img,)
 
         for column in new_columns:
+            # APPLY DC GUARD: 
+            # Zero out the central DC clutter bins so the color map can scale
+            # properly around the much weaker motion signatures.
+            column[center - DC_GUARD : center + DC_GUARD + 1] = 0
+
             waterfall = np.roll(waterfall, -1, axis=1)
             waterfall[:, -1] = column
             state["segment_count"] += 1
+            
+            # Log the original (or masked) data depending on your ML pipeline needs.
+            # Here it writes the masked data to keep logs visually consistent.
             if log_fh:
                 log_fh.write(" ".join(str(v) for v in column) + "\n")
 
@@ -230,7 +245,7 @@ def main():
         return (img,)
 
     anim = FuncAnimation(fig, on_tick, interval=1000.0 / args.redraw_hz,
-                          cache_frame_data=False, blit=False)
+                         cache_frame_data=False, blit=False)
 
     try:
         plt.show()

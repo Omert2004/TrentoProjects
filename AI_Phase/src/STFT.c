@@ -51,6 +51,21 @@ static inline int8_t ilog2_u32(uint32_t x)
     return n;
 }
 
+//******************************************************************************
+// Clamp to the int16_t/Q15 range instead of trusting DIFF_SHIFT (STFT.h)
+// to never overflow. DIFF_SHIFT is an empirical value you'll be tuning
+// against real hardware -- if it's too aggressive for a given capture,
+// this saturates cleanly instead of silently wrapping around (which
+// would look like random noise/spikes, exactly the kind of thing that's
+// very confusing to debug after the fact).
+//******************************************************************************
+static inline int16_t clamp_q15(int32_t v)
+{
+    if (v > 32767) return 32767;
+    if (v < -32768) return -32768;
+    return (int16_t)v;
+}
+
 
 //******************************************************************************
 // spectrogram moved to FRAM (not SRAM) via #pragma PERSISTENT.
@@ -120,39 +135,37 @@ void STFT_init(void)
     // }
 }
 
-void STFT_compute_next_segment(uint16_t *stft_input_I, uint16_t *stft_input_Q)
+void STFT_compute_next_segment(int16_t *stft_input_I, int16_t *stft_input_Q)
 {
     int c, r, i, n;
     msp_status status;
 
-    //--------------------------------------------------------------------
-    // Step 1: shift the spectrogram left by one column to make room for
-    // the new one. Identical to the thesis's STFT_compute_next_segment().
-    //--------------------------------------------------------------------
     for (c = 0; c < STFT_SEGMENTS - 1; c++)
         for (r = 0; r < FFT_SIZE; r++)
             spectrogram[c][r] = spectrogram[c + 1][r];
 
     //--------------------------------------------------------------------
-    // Step 2: center the raw ADC codes and scale into Q15 range.
+    // Step 2: scale into Q15 range.
     //
-    // ADC12_B on this device produces 12-bit unsigned codes: 0..4095.
-    // Centering (subtracting 2048, the ADC's midpoint) gives a signed
-    // range of -2048..+2047 -- this is the fixed-point equivalent of the
-    // thesis's "STFT_input_I[i] - 8192.0f" centering step (their ADC was
-    // 14-bit, ours is 12-bit, hence 2048 instead of 8192).
+    // ENABLE_CLUTTER_CANCEL path: stft_input_I/Q already hold signed
+    // difference values (main.c) -- a constant offset like the ADC's
+    // 2048 midpoint cancels out automatically when you difference two
+    // consecutive samples, so the old "- 2048" step would be WRONG here
+    // (it would push an already-small diff deeply negative). Just shift,
+    // clamping to the Q15 range since DIFF_SHIFT is an empirical value.
     //
-    // Q15 format represents fractional values from -1.0 to ~+1.0 using
-    // the full 16-bit signed range (-32768..32767). Our centered value
-    // only uses 12 of those bits (11 magnitude bits + sign), so we left-
-    // shift by 4 to spread it across nearly the full Q15 range -- this
-    // maximizes precision for the FFT and windowing steps that follow.
-    // (2047 << 4 = 32752, safely within int16_t range, no overflow.)
+    // Fallback path (filter disabled): unchanged from before -- center
+    // the raw 12-bit code, then shift.
     //--------------------------------------------------------------------
     for (i = 0; i < FFT_SIZE; i++)
     {
+#if ENABLE_CLUTTER_CANCEL
+        centered_I[i] = (_q15)clamp_q15((int32_t)stft_input_I[i] << DIFF_SHIFT);
+        centered_Q[i] = (_q15)clamp_q15((int32_t)stft_input_Q[i] << DIFF_SHIFT);
+#else
         centered_I[i] = (_q15)(((int16_t)stft_input_I[i] - 2048) << 4);
         centered_Q[i] = (_q15)(((int16_t)stft_input_Q[i] - 2048) << 4);
+#endif
     }
 
     //--------------------------------------------------------------------

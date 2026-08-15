@@ -13,6 +13,15 @@
 //  triggers, and while the DMA is transmitting a finished column. Only the
 //  ADC12_B ISR, the STFT compute call, and the (non-blocking) DMA kickoff
 //  run with the CPU actually awake.
+//
+//  Clutter cancellation: if ENABLE_CLUTTER_CANCEL (STFT.h) is set, each
+//  new raw ADC sample is replaced with the difference from the previous
+//  raw sample (y[n] = x[n] - x[n-1]) before it enters the STFT window.
+//  This is a single-delay canceller / fast-time high-pass filter -- it
+//  nulls zero-Doppler (static-reflector) content at the source, so the
+//  strong DC clutter peak doesn't dominate the FFT's dynamic range and
+//  bury weak motion signal. See the append loop below for the actual
+//  differencing, and STFT.c for the corresponding Q15 scaling change.
 //******************************************************************************
 
 #include <driverlib.h>
@@ -24,14 +33,29 @@
 // STFT input window -- holds the most recent FFT_SIZE samples, shifted
 // left by FFT_HOP each time a new hop's worth of data arrives. Same
 // shift-and-append pattern as the original MSP432 main.c.
-static uint16_t STFT_input_I[FFT_SIZE];
-static uint16_t STFT_input_Q[FFT_SIZE];
+//
+// Type is int16_t (not uint16_t): with ENABLE_CLUTTER_CANCEL this holds
+// signed difference values, not raw unsigned ADC codes.
+static int16_t STFT_input_I[FFT_SIZE];
+static int16_t STFT_input_Q[FFT_SIZE];
 
 // Set true right before UART_putSpectrogramColumn_DMA() kicks off a
 // transfer, cleared by the DMA ISR once the last byte has actually left
 // the shift register. Read/written from both the main loop and the DMA
 // ISR, hence volatile -- this is the sole handshake between the two.
 volatile bool dma_tx_in_progress = false;
+
+#if ENABLE_CLUTTER_CANCEL
+// Persists the previous RAW (unfiltered) sample across hops -- this is
+// what makes the differencing correct despite the 50%-overlap
+// shift-and-append scheme: each unique new sample is touched by this
+// exactly once, right where it's first pulled out of the ring buffer.
+// Values shifted along by the "shift window left" step below are already
+// differenced from a prior hop and must NOT be re-differenced.
+static uint16_t last_raw_I = 0;
+static uint16_t last_raw_Q = 0;
+static bool clutter_canceller_primed = false;
+#endif
 
 int main(void)
 {
@@ -87,8 +111,34 @@ int main(void)
             }
             for (i = FFT_SIZE - FFT_HOP; i < FFT_SIZE; i++)
             {
-                STFT_input_I[i] = I_queue[samples_index_out];
-                STFT_input_Q[i] = Q_queue[samples_index_out];
+                uint16_t raw_I = I_queue[samples_index_out];
+                uint16_t raw_Q = Q_queue[samples_index_out];
+
+            #if ENABLE_CLUTTER_CANCEL
+                if (!clutter_canceller_primed)
+                {
+                    // First sample ever: nothing to difference against.
+                    // Seed the canceller and emit 0 rather than a bogus
+                    // diff against an arbitrary starting value -- this
+                    // only affects the very first hop after boot.
+                    last_raw_I = raw_I;
+                    last_raw_Q = raw_Q;
+                    clutter_canceller_primed = true;
+                    STFT_input_I[i] = 0;
+                    STFT_input_Q[i] = 0;
+                }
+                else
+                {
+                    STFT_input_I[i] = (int16_t)raw_I - (int16_t)last_raw_I;
+                    STFT_input_Q[i] = (int16_t)raw_Q - (int16_t)last_raw_Q;
+                    last_raw_I = raw_I;
+                    last_raw_Q = raw_Q;
+                }
+            #else
+                STFT_input_I[i] = (int16_t)raw_I;
+                STFT_input_Q[i] = (int16_t)raw_Q;
+            #endif
+
                 samples_index_out = (samples_index_out + 1) % N_SAMPLES;
             }
 
