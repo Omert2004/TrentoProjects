@@ -5,7 +5,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#define SAMPLING_RATE_HZ   4000
+#define SAMPLING_RATE_HZ   2000
 #define N_SAMPLES          512   // ring buffer depth
 
 extern volatile uint16_t I_queue[N_SAMPLES];
