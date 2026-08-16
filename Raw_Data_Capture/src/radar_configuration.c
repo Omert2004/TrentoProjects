@@ -1,3 +1,4 @@
+
 //******************************************************************************
 //  radar_configuration.c -- continuous raw I/Q streaming, DMA-driven TX.
 //
@@ -7,31 +8,58 @@
 //  (RX was never validated on this board/wiring -- sidestepped
 //  entirely rather than debugged further).
 //
-//  UART TX is DMA-driven (same handshake pattern as the old
-//  UART_putSpectrogramColumn_DMA()/DMA_ISR from the STFT project) so the
-//  CPU isn't blocked in UART_putc() for the ~520us it takes to shift out
-//  a 6-byte frame at 115200 baud -- it sleeps in LPM0 instead and lets
-//  the ADC ISR wake it as needed. This does NOT raise the UART's
-//  wire-speed ceiling (~11,520 B/s) above what continuous 4 kHz
-//  dual-channel streaming needs (~24,000 B/s for 6-byte frames) -- the
-//  ring buffer's drop-if-full guard in the ADC ISR (main.c) is what
-//  keeps that deficit from corrupting anything, it just means some
-//  samples are cleanly skipped rather than sent, during sustained load.
+//  UART TX is DMA-driven and packetized in blocks of up to 32 I/Q pairs.
+//  The packet header includes packet/sample sequence values and the
+//  cumulative MCU ring-drop count; CRC16-CCITT protects header + payload.
+//  A full packet is 144 bytes, so 2000 samples/s consumes 9000 B/s at
+//  115200 baud, leaving about 22% wire-speed headroom.
 //******************************************************************************
 
 #include "radar_configuration.h"
 
 volatile uint16_t I_queue[N_SAMPLES];
 volatile uint16_t Q_queue[N_SAMPLES];
+volatile uint32_t sample_index_queue[N_SAMPLES];
 volatile int samples_index_in = 0;
 volatile int samples_index_out = 0;
+volatile uint32_t adc_total_sample_count = 0;
+volatile uint32_t adc_drop_count = 0;
 
 volatile bool dma_tx_in_progress = false;
 
-// 6-byte frame buffer: [0xAA][0x55][IFI_lo][IFI_hi][IFQ_lo][IFQ_hi].
-// No marker byte -- this is the only frame type on the wire in this
-// build, matching the format raw_print.py / rate_check.py already parse.
-static uint8_t dma_tx_buffer[6];
+static uint8_t dma_tx_buffer[RAW_PACKET_MAX_BYTES];
+
+static uint16_t crc16_ccitt(const uint8_t *data, uint16_t length)
+{
+    uint16_t crc = 0xFFFF;
+    uint16_t i;
+
+    while (length--)
+    {
+        crc ^= (uint16_t)(*data++) << 8;
+        for (i = 0; i < 8; i++)
+        {
+            crc = (crc & 0x8000)
+                    ? (uint16_t)((crc << 1) ^ 0x1021)
+                    : (uint16_t)(crc << 1);
+        }
+    }
+    return crc;
+}
+
+static void put_u16_le(uint8_t *buffer, uint16_t *offset, uint16_t value)
+{
+    buffer[(*offset)++] = (uint8_t)(value & 0xFF);
+    buffer[(*offset)++] = (uint8_t)((value >> 8) & 0xFF);
+}
+
+static void put_u32_le(uint8_t *buffer, uint16_t *offset, uint32_t value)
+{
+    buffer[(*offset)++] = (uint8_t)(value & 0xFF);
+    buffer[(*offset)++] = (uint8_t)((value >> 8) & 0xFF);
+    buffer[(*offset)++] = (uint8_t)((value >> 16) & 0xFF);
+    buffer[(*offset)++] = (uint8_t)((value >> 24) & 0xFF);
+}
 
 void UART_putc(uint8_t c)
 {
@@ -53,23 +81,44 @@ uint8_t UART_getc_nonblocking(bool *got_byte)
     return 0;
 }
 
-// Sends one IFI/IFQ pair via DMA (non-blocking). Same sequencing as the
-// STFT project's UART_putSpectrogramColumn_DMA(): point DMA at
-// everything after the first header byte, clear UCTXIFG so the DMA
-// doesn't see a stale flag and fire early, arm the DMA, then manually
-// write byte 0 -- that's the trigger that raises UCTXIFG and hands off
-// to the (already-armed) DMA for the rest of the frame.
-void UART_putFrame_DMA(uint16_t ifi, uint16_t ifq)
+// Packet format, all multi-byte integers little-endian:
+//   AA 55 D4 packet_seq:u16 first_sample_index:u32 sample_count:u8
+//   cumulative_drop_count:u32 (IFI:u16 IFQ:u16) * sample_count crc:u16
+// CRC16-CCITT uses init 0xFFFF, polynomial 0x1021, no reflection, and covers
+// marker D4 through the final payload byte (sync and CRC bytes excluded).
+void UART_putPacket_DMA(const uint16_t *ifi,
+                        const uint16_t *ifq,
+                        uint8_t sample_count,
+                        uint16_t packet_sequence,
+                        uint32_t first_sample_index,
+                        uint32_t cumulative_drop_count)
 {
-    dma_tx_buffer[0] = 0xAA;
-    dma_tx_buffer[1] = 0x55;
-    dma_tx_buffer[2] = (uint8_t)(ifi & 0xFF);
-    dma_tx_buffer[3] = (uint8_t)((ifi >> 8) & 0xFF);
-    dma_tx_buffer[4] = (uint8_t)(ifq & 0xFF);
-    dma_tx_buffer[5] = (uint8_t)((ifq >> 8) & 0xFF);
+    uint16_t offset = 0;
+    uint16_t crc;
+    uint8_t i;
+
+    if (sample_count == 0 || sample_count > RAW_PACKET_MAX_SAMPLES)
+        return;
+
+    dma_tx_buffer[offset++] = 0xAA;
+    dma_tx_buffer[offset++] = 0x55;
+    dma_tx_buffer[offset++] = RAW_PACKET_MARKER;
+    put_u16_le(dma_tx_buffer, &offset, packet_sequence);
+    put_u32_le(dma_tx_buffer, &offset, first_sample_index);
+    dma_tx_buffer[offset++] = sample_count;
+    put_u32_le(dma_tx_buffer, &offset, cumulative_drop_count);
+
+    for (i = 0; i < sample_count; i++)
+    {
+        put_u16_le(dma_tx_buffer, &offset, ifi[i]);
+        put_u16_le(dma_tx_buffer, &offset, ifq[i]);
+    }
+
+    crc = crc16_ccitt(&dma_tx_buffer[2], (uint16_t)(offset - 2));
+    put_u16_le(dma_tx_buffer, &offset, crc);
 
     DMA_setSrcAddress(DMA_CHANNEL_0, (uint32_t)&dma_tx_buffer[1], DMA_DIRECTION_INCREMENT);
-    DMA_setTransferSize(DMA_CHANNEL_0, 5);   // remaining 5 bytes after the manual first byte
+    DMA_setTransferSize(DMA_CHANNEL_0, (uint16_t)(offset - 1));
 
     // Wait for TXBUF to genuinely be free FIRST -- this reflects real
     // hardware state (returns immediately if already idle, or blocks
@@ -77,7 +126,7 @@ void UART_putFrame_DMA(uint16_t ifi, uint16_t ifq)
     // AFTER that do we clear UCTXIFG and arm the DMA: clearing before
     // confirming readiness was the earlier bug -- if TXBUF was already
     // empty, nothing would ever set the flag again (nothing left to
-    // trigger it), deadlocking here forever and starving the watchdog.
+    // trigger it), deadlocking here forever.
     while (!(UCA0IFG & UCTXIFG));
 
     UCA0IFG &= ~UCTXIFG;
@@ -129,7 +178,8 @@ void Init_UART(void)
 void Init_ADC(void)
 {
     ADC12_B_initParam adcConfig = {0};
-    adcConfig.sampleHoldSignalSourceSelect = ADC12_B_SAMPLEHOLDSOURCE_SC;  // TA2 CCR1 output
+    // The Timer_A2 CCR0 ISR sets ADC12SC for each A12->A13 sequence.
+    adcConfig.sampleHoldSignalSourceSelect = ADC12_B_SAMPLEHOLDSOURCE_SC;
     adcConfig.clockSourceSelect            = ADC12_B_CLOCKSOURCE_ADC12OSC;
     adcConfig.clockSourceDivider           = ADC12_B_CLOCKDIVIDER_1;
     adcConfig.clockSourcePredivider        = ADC12_B_CLOCKPREDIVIDER__1;
@@ -178,13 +228,6 @@ void Init_TIMER(void)
     upParam.timerClear                                = TIMER_A_DO_CLEAR;
     upParam.startTimer                                = false;
     Timer_A_initUpMode(TIMER_A2_BASE, &upParam);
-
-    Timer_A_initCompareModeParam compParam = {0};
-    compParam.compareRegister        = TIMER_A_CAPTURECOMPARE_REGISTER_1;
-    compParam.compareInterruptEnable = TIMER_A_CAPTURECOMPARE_INTERRUPT_DISABLE;
-    compParam.compareOutputMode      = TIMER_A_OUTPUTMODE_SET_RESET;
-    compParam.compareValue           = 1000;
-    Timer_A_initCompareMode(TIMER_A2_BASE, &compParam);
 
     Timer_A_startCounter(TIMER_A2_BASE, TIMER_A_UP_MODE);
 }
