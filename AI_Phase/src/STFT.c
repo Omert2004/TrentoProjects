@@ -22,7 +22,49 @@
 #include "STFT.h"
 #include "window_q15.h"     // Q15 Hanning coefficients
 #include <DSPLib.h>
-#include <math.h>
+
+
+//******************************************************************************
+// Integer floor(log2(x)) for positive 32-bit x -- exact replacement for the
+// previous (int8_t)log2f((float)magnitude).
+//
+// Why this is a drop-in, lossless swap and not an approximation: the old
+// code immediately truncated log2f()'s float result to int8_t, which is
+// exactly floor(log2(x)) for positive x -- the fractional part was already
+// being thrown away. floor(log2(x)) is just "the index of the highest set
+// bit", computable with a handful of integer compares/shifts instead of a
+// software floating-point library call (this core has no FPU, so log2f()
+// was doing float normalization + iteration entirely in software -- the
+// dominant per-hop cost measured via the profiling frame: ~250-280 ms
+// of the ~250-330 ms per column was inside STFT_compute_next_segment(),
+// with DMA wait consistently measuring 0 ms).
+//
+// Binary-search bit-length, 5 compares worst case, all integer ops.
+static inline int8_t ilog2_u32(uint32_t x)
+{
+    int8_t n = 0;
+    if (x >= (1UL << 16)) { n += 16; x >>= 16; }
+    if (x >= (1UL << 8))  { n += 8;  x >>= 8;  }
+    if (x >= (1UL << 4))  { n += 4;  x >>= 4;  }
+    if (x >= (1UL << 2))  { n += 2;  x >>= 2;  }
+    if (x >= (1UL << 1))  { n += 1; }
+    return n;
+}
+
+//******************************************************************************
+// Clamp to the int16_t/Q15 range instead of trusting DIFF_SHIFT (STFT.h)
+// to never overflow. DIFF_SHIFT is an empirical value you'll be tuning
+// against real hardware -- if it's too aggressive for a given capture,
+// this saturates cleanly instead of silently wrapping around (which
+// would look like random noise/spikes, exactly the kind of thing that's
+// very confusing to debug after the fact).
+//******************************************************************************
+static inline int16_t clamp_q15(int32_t v)
+{
+    if (v > 32767) return 32767;
+    if (v < -32768) return -32768;
+    return (int16_t)v;
+}
 
 
 //******************************************************************************
@@ -93,39 +135,37 @@ void STFT_init(void)
     // }
 }
 
-void STFT_compute_next_segment(uint16_t *stft_input_I, uint16_t *stft_input_Q)
+void STFT_compute_next_segment(int16_t *stft_input_I, int16_t *stft_input_Q)
 {
     int c, r, i, n;
     msp_status status;
 
-    //--------------------------------------------------------------------
-    // Step 1: shift the spectrogram left by one column to make room for
-    // the new one. Identical to the thesis's STFT_compute_next_segment().
-    //--------------------------------------------------------------------
     for (c = 0; c < STFT_SEGMENTS - 1; c++)
         for (r = 0; r < FFT_SIZE; r++)
             spectrogram[c][r] = spectrogram[c + 1][r];
 
     //--------------------------------------------------------------------
-    // Step 2: center the raw ADC codes and scale into Q15 range.
+    // Step 2: scale into Q15 range.
     //
-    // ADC12_B on this device produces 12-bit unsigned codes: 0..4095.
-    // Centering (subtracting 2048, the ADC's midpoint) gives a signed
-    // range of -2048..+2047 -- this is the fixed-point equivalent of the
-    // thesis's "STFT_input_I[i] - 8192.0f" centering step (their ADC was
-    // 14-bit, ours is 12-bit, hence 2048 instead of 8192).
+    // ENABLE_CLUTTER_CANCEL path: stft_input_I/Q already hold signed
+    // difference values (main.c) -- a constant offset like the ADC's
+    // 2048 midpoint cancels out automatically when you difference two
+    // consecutive samples, so the old "- 2048" step would be WRONG here
+    // (it would push an already-small diff deeply negative). Just shift,
+    // clamping to the Q15 range since DIFF_SHIFT is an empirical value.
     //
-    // Q15 format represents fractional values from -1.0 to ~+1.0 using
-    // the full 16-bit signed range (-32768..32767). Our centered value
-    // only uses 12 of those bits (11 magnitude bits + sign), so we left-
-    // shift by 4 to spread it across nearly the full Q15 range -- this
-    // maximizes precision for the FFT and windowing steps that follow.
-    // (2047 << 4 = 32752, safely within int16_t range, no overflow.)
+    // Fallback path (filter disabled): unchanged from before -- center
+    // the raw 12-bit code, then shift.
     //--------------------------------------------------------------------
     for (i = 0; i < FFT_SIZE; i++)
     {
+#if ENABLE_CLUTTER_CANCEL
+        centered_I[i] = (_q15)clamp_q15((int32_t)stft_input_I[i] << DIFF_SHIFT);
+        centered_Q[i] = (_q15)clamp_q15((int32_t)stft_input_Q[i] << DIFF_SHIFT);
+#else
         centered_I[i] = (_q15)(((int16_t)stft_input_I[i] - 2048) << 4);
         centered_Q[i] = (_q15)(((int16_t)stft_input_Q[i] - 2048) << 4);
+#endif
     }
 
     //--------------------------------------------------------------------
@@ -190,9 +230,12 @@ void STFT_compute_next_segment(uint16_t *stft_input_I, uint16_t *stft_input_Q)
     //
     // DSPLib has no LEA-accelerated complex-magnitude function (it's
     // absent from TI's own "LEA Supported APIs" table), so this stays a
-    // plain CPU loop -- same as the thesis's "r*r + i*i" computation,
-    // just reading from the interleaved Q15 buffer instead of a float
-    // array. This is cheap relative to the FFT itself.
+    // plain CPU loop. The log2 step uses ilog2_u32() (integer, see above)
+    // rather than log2f() -- measured via the firmware's profiling
+    // frame to be the dominant per-hop cost by a wide margin (log2f() is
+    // software floating-point on this FPU-less core, called up to 256x
+    // per segment). ilog2_u32() produces the identical result, since the
+    // old code's (int8_t) cast was already truncating to floor(log2(x)).
     //
     // (n + FFT_SIZE/2) % FFT_SIZE reproduces np.fft.fftshift /
     // the thesis's frequency-shift, putting DC in the middle of the row
@@ -205,7 +248,12 @@ void STFT_compute_next_segment(uint16_t *stft_input_I, uint16_t *stft_input_Q)
         int32_t magnitude = (int32_t)re * re + (int32_t)im * im;
 
         int nn = (n + FFT_SIZE / 2) % FFT_SIZE;
-        int8_t val = (magnitude > 0) ? (int8_t)log2f((float)magnitude) : 0;
+        int8_t val = (magnitude > 0) ? ilog2_u32((uint32_t)magnitude) : 0;
+        // ilog2_u32() only ever returns 0..31 (magnitude is at most ~2^31,
+        // see its own comment above), so val is never actually negative
+        // here -- this clamp is defensive, not something that can trigger
+        // in practice. Kept because it costs nothing and guards against
+        // magnitude someday overflowing int32_t if FFT_SIZE/scaling changes.
         spectrogram[STFT_SEGMENTS - 1][nn] = (val < 0) ? 0 : val;
     }
 }

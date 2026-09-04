@@ -1,0 +1,28 @@
+
+# Local dataset and project archives
+*.zip
+
+# Local archives
+*.zip
+
+# Local datasets and generated dataset reviews
+Raw_Data_Capture/dataset/
+Raw_Data_Capture/New Python Filess/dataset/
+Raw_Data_Capture/New Python Filess/quarantine/
+Raw_Data_Capture/New Python Filess/spectrogram_checks/
+Model_Phase/dataset/
+modelzoo/data/
+modelzoo/outputs/
+
+# Local archives
+*.zip
+
+# Local datasets
+Raw_Data_Capture/dataset/
+Raw_Data_Capture/New Python Filess/dataset/
+Model_Phase/dataset/
+AI_Phase/dataset/
+STFT_Parity/dataset/
+STFT_Phase/dataset/
+modelzoo/data/
+modelzoo/outputs/

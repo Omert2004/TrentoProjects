@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "73200a910ffc657cdc10597f40833a7e8d6f680bb6732805212608ee22098ac7",
+  "weight_bytes": 29328,
+  "bias_bytes": 208,
+  "conv1_activation_scale": 0.11118150598862592,
+  "conv2_activation_scale": 0.06712384691425398,
+  "conv1_weight_scale": 0.0029748488129593257,
+  "conv2_weight_scale": 0.002574519848260354,
+  "fc_weight_scale": 0.0017332647025115847,
+  "conv1_requant_q15": 877,
+  "conv2_requant_q15": 140,
+  "generated_source_sha256": "0e762901c243a574488d628c614b3e61d48c869e30f9546d11ee7a593fb68c62"
+}

@@ -1,0 +1,12 @@
+{
+  "checkpoint_sha256": "73200a910ffc657cdc10597f40833a7e8d6f680bb6732805212608ee22098ac7",
+  "generated_source_sha256": "0e762901c243a574488d628c614b3e61d48c869e30f9546d11ee7a593fb68c62",
+  "validation_examples": 240,
+  "float_accuracy": 0.8375,
+  "float_macro_f1": 0.8389627366097955,
+  "integer_accuracy": 0.8416666666666667,
+  "integer_macro_f1": 0.8430576823797163,
+  "integer_vs_float_prediction_agreement": 0.9958333333333333,
+  "changed_predictions": 1,
+  "test_set_evaluated": false
+}

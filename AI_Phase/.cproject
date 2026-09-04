@@ -124,7 +124,7 @@
                             </option>
                             <option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.228858163" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="21.6.2.LTS" valueType="string"/>
                             <targetPlatform id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.targetPlatformRelease.1608650854" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.targetPlatformRelease"/>
-                            <builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.builderRelease.6382199" name="GNU Make.Release" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.builderRelease"/>
+                            <builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.builderRelease.6382199" keepEnvironmentInBuildfile="false" name="GNU Make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.builderRelease"/>
                             <tool id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.compilerRelease.1087362311" name="MSP430 Compiler" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.compilerRelease">
                                 <option id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.DEFINE.282219018" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.DEFINE" valueType="definedSymbols">
                                     <listOptionValue value="__MSP430FR5994__"/>

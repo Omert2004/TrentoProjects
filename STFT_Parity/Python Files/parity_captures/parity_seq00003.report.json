@@ -1,0 +1,425 @@
+{
+  "schema_version": 1,
+  "capture_sequence": 3,
+  "sampling_rate_hz": 4000,
+  "fft_size": 256,
+  "fft_hop": 128,
+  "clutter_cancel_enabled": false,
+  "first_sample_index": 0,
+  "cumulative_drop_count": 0,
+  "parser_statistics": {
+    "bytes_read": 3591,
+    "frames_accepted": 4,
+    "initial_alignment_bytes": 0,
+    "discarded_after_sync": 0,
+    "invalid_headers": 0,
+    "crc_errors": 0,
+    "serial_empty_reads": 3
+  },
+  "window_stage": {
+    "exact": true,
+    "matching_values": 512,
+    "total_values": 512,
+    "mismatch_count": 0,
+    "max_absolute_difference": 0,
+    "first_mismatches": []
+  },
+  "fft_stage_candidate": {
+    "exact": false,
+    "matching_values": 166,
+    "total_values": 512,
+    "mismatch_count": 346,
+    "max_absolute_difference": 5,
+    "first_mismatches": [
+      {
+        "index": 0,
+        "board": -8524,
+        "python": -8522,
+        "difference": 2
+      },
+      {
+        "index": 1,
+        "board": -8700,
+        "python": -8698,
+        "difference": 2
+      },
+      {
+        "index": 2,
+        "board": 4178,
+        "python": 4179,
+        "difference": 1
+      },
+      {
+        "index": 3,
+        "board": 4437,
+        "python": 4441,
+        "difference": 4
+      },
+      {
+        "index": 5,
+        "board": -13,
+        "python": -10,
+        "difference": 3
+      },
+      {
+        "index": 6,
+        "board": -34,
+        "python": -35,
+        "difference": -1
+      },
+      {
+        "index": 7,
+        "board": -3,
+        "python": 2,
+        "difference": 5
+      },
+      {
+        "index": 8,
+        "board": 8,
+        "python": 9,
+        "difference": 1
+      },
+      {
+        "index": 9,
+        "board": -34,
+        "python": -30,
+        "difference": 4
+      },
+      {
+        "index": 11,
+        "board": 11,
+        "python": 14,
+        "difference": 3
+      },
+      {
+        "index": 13,
+        "board": -6,
+        "python": -3,
+        "difference": 3
+      },
+      {
+        "index": 14,
+        "board": 1,
+        "python": 3,
+        "difference": 2
+      },
+      {
+        "index": 15,
+        "board": -5,
+        "python": -2,
+        "difference": 3
+      },
+      {
+        "index": 16,
+        "board": -9,
+        "python": -10,
+        "difference": -1
+      },
+      {
+        "index": 17,
+        "board": -8,
+        "python": -6,
+        "difference": 2
+      },
+      {
+        "index": 19,
+        "board": -2,
+        "python": 0,
+        "difference": 2
+      },
+      {
+        "index": 21,
+        "board": 0,
+        "python": 3,
+        "difference": 3
+      },
+      {
+        "index": 23,
+        "board": -13,
+        "python": -10,
+        "difference": 3
+      },
+      {
+        "index": 25,
+        "board": 3,
+        "python": 6,
+        "difference": 3
+      },
+      {
+        "index": 27,
+        "board": -5,
+        "python": -4,
+        "difference": 1
+      }
+    ]
+  },
+  "postprocess_from_board_fft": {
+    "exact": true,
+    "matching_values": 256,
+    "total_values": 256,
+    "mismatch_count": 0,
+    "max_absolute_difference": 0,
+    "first_mismatches": []
+  },
+  "end_to_end_candidate": {
+    "exact": false,
+    "matching_values": 108,
+    "total_values": 256,
+    "mismatch_count": 148,
+    "max_absolute_difference": 4,
+    "first_mismatches": [
+      {
+        "index": 7,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 8,
+        "board": 6,
+        "python": 5,
+        "difference": -1
+      },
+      {
+        "index": 10,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 14,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 17,
+        "board": 0,
+        "python": 1,
+        "difference": 1
+      },
+      {
+        "index": 18,
+        "board": 1,
+        "python": 0,
+        "difference": -1
+      },
+      {
+        "index": 19,
+        "board": 1,
+        "python": 0,
+        "difference": -1
+      },
+      {
+        "index": 21,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 22,
+        "board": 2,
+        "python": 3,
+        "difference": 1
+      },
+      {
+        "index": 23,
+        "board": 3,
+        "python": 2,
+        "difference": -1
+      },
+      {
+        "index": 25,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 28,
+        "board": 1,
+        "python": 2,
+        "difference": 1
+      },
+      {
+        "index": 29,
+        "board": 1,
+        "python": 3,
+        "difference": 2
+      },
+      {
+        "index": 31,
+        "board": 2,
+        "python": 3,
+        "difference": 1
+      },
+      {
+        "index": 32,
+        "board": 1,
+        "python": 2,
+        "difference": 1
+      },
+      {
+        "index": 33,
+        "board": 0,
+        "python": 3,
+        "difference": 3
+      },
+      {
+        "index": 34,
+        "board": 3,
+        "python": 0,
+        "difference": -3
+      },
+      {
+        "index": 38,
+        "board": 3,
+        "python": 4,
+        "difference": 1
+      },
+      {
+        "index": 39,
+        "board": 0,
+        "python": 1,
+        "difference": 1
+      },
+      {
+        "index": 40,
+        "board": 2,
+        "python": 0,
+        "difference": -2
+      }
+    ]
+  },
+  "float_reference_column": {
+    "exact": false,
+    "matching_values": 111,
+    "total_values": 256,
+    "mismatch_count": 145,
+    "max_absolute_difference": 4,
+    "first_mismatches": [
+      {
+        "index": 7,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 8,
+        "board": 6,
+        "python": 5,
+        "difference": -1
+      },
+      {
+        "index": 10,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 15,
+        "board": 2,
+        "python": 3,
+        "difference": 1
+      },
+      {
+        "index": 18,
+        "board": 1,
+        "python": 0,
+        "difference": -1
+      },
+      {
+        "index": 19,
+        "board": 1,
+        "python": 0,
+        "difference": -1
+      },
+      {
+        "index": 21,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 25,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 28,
+        "board": 1,
+        "python": 2,
+        "difference": 1
+      },
+      {
+        "index": 29,
+        "board": 1,
+        "python": 2,
+        "difference": 1
+      },
+      {
+        "index": 32,
+        "board": 1,
+        "python": 2,
+        "difference": 1
+      },
+      {
+        "index": 33,
+        "board": 0,
+        "python": 2,
+        "difference": 2
+      },
+      {
+        "index": 34,
+        "board": 3,
+        "python": 0,
+        "difference": -3
+      },
+      {
+        "index": 35,
+        "board": 2,
+        "python": 1,
+        "difference": -1
+      },
+      {
+        "index": 38,
+        "board": 3,
+        "python": 4,
+        "difference": 1
+      },
+      {
+        "index": 40,
+        "board": 2,
+        "python": 1,
+        "difference": -1
+      },
+      {
+        "index": 41,
+        "board": 3,
+        "python": 2,
+        "difference": -1
+      },
+      {
+        "index": 42,
+        "board": 1,
+        "python": 2,
+        "difference": 1
+      },
+      {
+        "index": 45,
+        "board": 3,
+        "python": 4,
+        "difference": 1
+      },
+      {
+        "index": 46,
+        "board": 2,
+        "python": 3,
+        "difference": 1
+      }
+    ]
+  },
+  "board_fft_magnitude_int32_overflows": 0,
+  "python_fft_magnitude_int32_overflows": 0,
+  "bit_exact_parity_proven": false
+}

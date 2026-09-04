@@ -66,6 +66,72 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Raw_Data_Capture",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "Raw_Data_Capture",
+                "resourceId": "/Raw_Data_Capture"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "STFT_Parity",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "STFT_Parity",
+                "resourceId": "/STFT_Parity"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Model_Phase",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "Model_Phase",
+                "resourceId": "/Model_Phase"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

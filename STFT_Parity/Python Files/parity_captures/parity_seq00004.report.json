@@ -1,0 +1,425 @@
+{
+  "schema_version": 1,
+  "capture_sequence": 4,
+  "sampling_rate_hz": 2000,
+  "fft_size": 256,
+  "fft_hop": 128,
+  "clutter_cancel_enabled": false,
+  "first_sample_index": 0,
+  "cumulative_drop_count": 0,
+  "parser_statistics": {
+    "bytes_read": 3387,
+    "frames_accepted": 4,
+    "initial_alignment_bytes": 0,
+    "discarded_after_sync": 0,
+    "invalid_headers": 0,
+    "crc_errors": 0,
+    "serial_empty_reads": 1
+  },
+  "window_stage": {
+    "exact": true,
+    "matching_values": 512,
+    "total_values": 512,
+    "mismatch_count": 0,
+    "max_absolute_difference": 0,
+    "first_mismatches": []
+  },
+  "fft_stage_candidate": {
+    "exact": false,
+    "matching_values": 180,
+    "total_values": 512,
+    "mismatch_count": 332,
+    "max_absolute_difference": 6,
+    "first_mismatches": [
+      {
+        "index": 0,
+        "board": -8383,
+        "python": -8380,
+        "difference": 3
+      },
+      {
+        "index": 1,
+        "board": -8653,
+        "python": -8652,
+        "difference": 1
+      },
+      {
+        "index": 2,
+        "board": 4107,
+        "python": 4109,
+        "difference": 2
+      },
+      {
+        "index": 3,
+        "board": 4460,
+        "python": 4466,
+        "difference": 6
+      },
+      {
+        "index": 4,
+        "board": -21,
+        "python": -22,
+        "difference": -1
+      },
+      {
+        "index": 5,
+        "board": -65,
+        "python": -62,
+        "difference": 3
+      },
+      {
+        "index": 6,
+        "board": 34,
+        "python": 36,
+        "difference": 2
+      },
+      {
+        "index": 7,
+        "board": -33,
+        "python": -29,
+        "difference": 4
+      },
+      {
+        "index": 9,
+        "board": 30,
+        "python": 34,
+        "difference": 4
+      },
+      {
+        "index": 10,
+        "board": -16,
+        "python": -17,
+        "difference": -1
+      },
+      {
+        "index": 11,
+        "board": -30,
+        "python": -26,
+        "difference": 4
+      },
+      {
+        "index": 12,
+        "board": 33,
+        "python": 34,
+        "difference": 1
+      },
+      {
+        "index": 13,
+        "board": -21,
+        "python": -17,
+        "difference": 4
+      },
+      {
+        "index": 14,
+        "board": -1,
+        "python": 0,
+        "difference": 1
+      },
+      {
+        "index": 15,
+        "board": 23,
+        "python": 28,
+        "difference": 5
+      },
+      {
+        "index": 16,
+        "board": -31,
+        "python": -30,
+        "difference": 1
+      },
+      {
+        "index": 17,
+        "board": 3,
+        "python": 4,
+        "difference": 1
+      },
+      {
+        "index": 19,
+        "board": -27,
+        "python": -24,
+        "difference": 3
+      },
+      {
+        "index": 20,
+        "board": 11,
+        "python": 12,
+        "difference": 1
+      },
+      {
+        "index": 21,
+        "board": -6,
+        "python": -3,
+        "difference": 3
+      }
+    ]
+  },
+  "postprocess_from_board_fft": {
+    "exact": true,
+    "matching_values": 256,
+    "total_values": 256,
+    "mismatch_count": 0,
+    "max_absolute_difference": 0,
+    "first_mismatches": []
+  },
+  "end_to_end_candidate": {
+    "exact": false,
+    "matching_values": 122,
+    "total_values": 256,
+    "mismatch_count": 134,
+    "max_absolute_difference": 3,
+    "first_mismatches": [
+      {
+        "index": 0,
+        "board": 3,
+        "python": 2,
+        "difference": -1
+      },
+      {
+        "index": 2,
+        "board": 3,
+        "python": 2,
+        "difference": -1
+      },
+      {
+        "index": 3,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 4,
+        "board": 2,
+        "python": 1,
+        "difference": -1
+      },
+      {
+        "index": 5,
+        "board": 3,
+        "python": 2,
+        "difference": -1
+      },
+      {
+        "index": 6,
+        "board": 1,
+        "python": 0,
+        "difference": -1
+      },
+      {
+        "index": 7,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 8,
+        "board": 1,
+        "python": 2,
+        "difference": 1
+      },
+      {
+        "index": 9,
+        "board": 4,
+        "python": 3,
+        "difference": -1
+      },
+      {
+        "index": 11,
+        "board": 0,
+        "python": 1,
+        "difference": 1
+      },
+      {
+        "index": 13,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 15,
+        "board": 2,
+        "python": 3,
+        "difference": 1
+      },
+      {
+        "index": 16,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 17,
+        "board": 3,
+        "python": 5,
+        "difference": 2
+      },
+      {
+        "index": 19,
+        "board": 3,
+        "python": 4,
+        "difference": 1
+      },
+      {
+        "index": 21,
+        "board": 1,
+        "python": 3,
+        "difference": 2
+      },
+      {
+        "index": 22,
+        "board": 0,
+        "python": 2,
+        "difference": 2
+      },
+      {
+        "index": 23,
+        "board": 0,
+        "python": 2,
+        "difference": 2
+      },
+      {
+        "index": 26,
+        "board": 1,
+        "python": 2,
+        "difference": 1
+      },
+      {
+        "index": 27,
+        "board": 4,
+        "python": 3,
+        "difference": -1
+      }
+    ]
+  },
+  "float_reference_column": {
+    "exact": false,
+    "matching_values": 111,
+    "total_values": 256,
+    "mismatch_count": 145,
+    "max_absolute_difference": 3,
+    "first_mismatches": [
+      {
+        "index": 2,
+        "board": 3,
+        "python": 2,
+        "difference": -1
+      },
+      {
+        "index": 3,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 4,
+        "board": 2,
+        "python": 1,
+        "difference": -1
+      },
+      {
+        "index": 5,
+        "board": 3,
+        "python": 2,
+        "difference": -1
+      },
+      {
+        "index": 6,
+        "board": 1,
+        "python": 0,
+        "difference": -1
+      },
+      {
+        "index": 7,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 8,
+        "board": 1,
+        "python": 3,
+        "difference": 2
+      },
+      {
+        "index": 9,
+        "board": 4,
+        "python": 3,
+        "difference": -1
+      },
+      {
+        "index": 11,
+        "board": 0,
+        "python": 1,
+        "difference": 1
+      },
+      {
+        "index": 13,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 14,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 16,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 17,
+        "board": 3,
+        "python": 5,
+        "difference": 2
+      },
+      {
+        "index": 18,
+        "board": 3,
+        "python": 4,
+        "difference": 1
+      },
+      {
+        "index": 19,
+        "board": 3,
+        "python": 4,
+        "difference": 1
+      },
+      {
+        "index": 21,
+        "board": 1,
+        "python": 3,
+        "difference": 2
+      },
+      {
+        "index": 22,
+        "board": 0,
+        "python": 1,
+        "difference": 1
+      },
+      {
+        "index": 23,
+        "board": 0,
+        "python": 2,
+        "difference": 2
+      },
+      {
+        "index": 26,
+        "board": 1,
+        "python": 3,
+        "difference": 2
+      },
+      {
+        "index": 27,
+        "board": 4,
+        "python": 2,
+        "difference": -2
+      }
+    ]
+  },
+  "board_fft_magnitude_int32_overflows": 0,
+  "python_fft_magnitude_int32_overflows": 0,
+  "bit_exact_parity_proven": false
+}

@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "capture_sequence": 275,
+  "sampling_rate_hz": 2000,
+  "fft_size": 256,
+  "fft_hop": 128,
+  "raw_sample_count": 257,
+  "clutter_cancel_enabled": true,
+  "diff_shift": 4,
+  "first_sample_index": 0,
+  "cumulative_drop_count": 0,
+  "parser_statistics": {
+    "bytes_read": 3391,
+    "frames_accepted": 4,
+    "initial_alignment_bytes": 0,
+    "discarded_after_sync": 0,
+    "invalid_headers": 0,
+    "crc_errors": 0,
+    "serial_empty_reads": 2
+  },
+  "window_stage": {
+    "exact": true,
+    "matching_values": 512,
+    "total_values": 512,
+    "mismatch_count": 0,
+    "max_absolute_difference": 0,
+    "first_mismatches": []
+  },
+  "fft_stage_candidate": {
+    "exact": false,
+    "matching_values": 171,
+    "total_values": 512,
+    "mismatch_count": 341,
+    "max_absolute_difference": 5,
+    "first_mismatches": [
+      {
+        "index": 0,
+        "board": -9,
+        "python": -6,
+        "difference": 3
+      },
+      {
+        "index": 1,
+        "board": -7,
+        "python": -5,
+        "difference": 2
+      },
+      {
+        "index": 2,
+        "board": -4,
+        "python": -3,
+        "difference": 1
+      },
+      {
+        "index": 3,
+        "board": -5,
+        "python": 0,
+        "difference": 5
+      },
+      {
+        "index": 4,
+        "board": -2,
+        "python": -3,
+        "difference": -1
+      },
+      {
+        "index": 5,
+        "board": -6,
+        "python": -2,
+        "difference": 4
+      },
+      {
+        "index": 7,
+        "board": -9,
+        "python": -4,
+        "difference": 5
+      },
+      {
+        "index": 9,
+        "board": -4,
+        "python": -2,
+        "difference": 2
+      },
+      {
+        "index": 10,
+        "board": -7,
+        "python": -6,
+        "difference": 1
+      },
+      {
+        "index": 11,
+        "board": -4,
+        "python": 1,
+        "difference": 5
+      },
+      {
+        "index": 12,
+        "board": -21,
+        "python": -20,
+        "difference": 1
+      },
+      {
+        "index": 13,
+        "board": -2,
+        "python": 1,
+        "difference": 3
+      },
+      {
+        "index": 14,
+        "board": 15,
+        "python": 16,
+        "difference": 1
+      },
+      {
+        "index": 15,
+        "board": -5,
+        "python": -2,
+        "difference": 3
+      },
+      {
+        "index": 16,
+        "board": -6,
+        "python": -7,
+        "difference": -1
+      },
+      {
+        "index": 17,
+        "board": -5,
+        "python": -2,
+        "difference": 3
+      },
+      {
+        "index": 18,
+        "board": 0,
+        "python": 1,
+        "difference": 1
+      },
+      {
+        "index": 19,
+        "board": -4,
+        "python": -2,
+        "difference": 2
+      },
+      {
+        "index": 21,
+        "board": -6,
+        "python": -2,
+        "difference": 4
+      },
+      {
+        "index": 23,
+        "board": -2,
+        "python": 1,
+        "difference": 3
+      }
+    ]
+  },
+  "postprocess_from_board_fft": {
+    "exact": true,
+    "matching_values": 256,
+    "total_values": 256,
+    "mismatch_count": 0,
+    "max_absolute_difference": 0,
+    "first_mismatches": []
+  },
+  "end_to_end_candidate": {
+    "exact": false,
+    "matching_values": 158,
+    "total_values": 256,
+    "mismatch_count": 98,
+    "max_absolute_difference": 3,
+    "first_mismatches": [
+      {
+        "index": 1,
+        "board": 5,
+        "python": 6,
+        "difference": 1
+      },
+      {
+        "index": 3,
+        "board": 7,
+        "python": 8,
+        "difference": 1
+      },
+      {
+        "index": 12,
+        "board": 5,
+        "python": 6,
+        "difference": 1
+      },
+      {
+        "index": 22,
+        "board": 7,
+        "python": 6,
+        "difference": -1
+      },
+      {
+        "index": 23,
+        "board": 6,
+        "python": 7,
+        "difference": 1
+      },
+      {
+        "index": 24,
+        "board": 5,
+        "python": 6,
+        "difference": 1
+      },
+      {
+        "index": 26,
+        "board": 8,
+        "python": 7,
+        "difference": -1
+      },
+      {
+        "index": 30,
+        "board": 6,
+        "python": 5,
+        "difference": -1
+      },
+      {
+        "index": 31,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 32,
+        "board": 4,
+        "python": 3,
+        "difference": -1
+      },
+      {
+        "index": 35,
+        "board": 5,
+        "python": 6,
+        "difference": 1
+      },
+      {
+        "index": 37,
+        "board": 9,
+        "python": 8,
+        "difference": -1
+      },
+      {
+        "index": 40,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 42,
+        "board": 2,
+        "python": 3,
+        "difference": 1
+      },
+      {
+        "index": 43,
+        "board": 3,
+        "python": 4,
+        "difference": 1
+      },
+      {
+        "index": 53,
+        "board": 6,
+        "python": 5,
+        "difference": -1
+      },
+      {
+        "index": 55,
+        "board": 6,
+        "python": 7,
+        "difference": 1
+      },
+      {
+        "index": 58,
+        "board": 2,
+        "python": 1,
+        "difference": -1
+      },
+      {
+        "index": 60,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 62,
+        "board": 5,
+        "python": 6,
+        "difference": 1
+      }
+    ]
+  },
+  "float_reference_column": {
+    "exact": false,
+    "matching_values": 147,
+    "total_values": 256,
+    "mismatch_count": 109,
+    "max_absolute_difference": 5,
+    "first_mismatches": [
+      {
+        "index": 1,
+        "board": 5,
+        "python": 6,
+        "difference": 1
+      },
+      {
+        "index": 8,
+        "board": 6,
+        "python": 7,
+        "difference": 1
+      },
+      {
+        "index": 12,
+        "board": 5,
+        "python": 6,
+        "difference": 1
+      },
+      {
+        "index": 17,
+        "board": 8,
+        "python": 7,
+        "difference": -1
+      },
+      {
+        "index": 22,
+        "board": 7,
+        "python": 6,
+        "difference": -1
+      },
+      {
+        "index": 23,
+        "board": 6,
+        "python": 7,
+        "difference": 1
+      },
+      {
+        "index": 24,
+        "board": 5,
+        "python": 6,
+        "difference": 1
+      },
+      {
+        "index": 26,
+        "board": 8,
+        "python": 7,
+        "difference": -1
+      },
+      {
+        "index": 30,
+        "board": 6,
+        "python": 5,
+        "difference": -1
+      },
+      {
+        "index": 31,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 32,
+        "board": 4,
+        "python": 3,
+        "difference": -1
+      },
+      {
+        "index": 34,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      },
+      {
+        "index": 35,
+        "board": 5,
+        "python": 6,
+        "difference": 1
+      },
+      {
+        "index": 41,
+        "board": 3,
+        "python": 2,
+        "difference": -1
+      },
+      {
+        "index": 43,
+        "board": 3,
+        "python": 4,
+        "difference": 1
+      },
+      {
+        "index": 54,
+        "board": 2,
+        "python": 0,
+        "difference": -2
+      },
+      {
+        "index": 55,
+        "board": 6,
+        "python": 7,
+        "difference": 1
+      },
+      {
+        "index": 58,
+        "board": 2,
+        "python": 1,
+        "difference": -1
+      },
+      {
+        "index": 60,
+        "board": 5,
+        "python": 4,
+        "difference": -1
+      },
+      {
+        "index": 64,
+        "board": 4,
+        "python": 5,
+        "difference": 1
+      }
+    ]
+  },
+  "board_fft_magnitude_int32_overflows": 0,
+  "python_fft_magnitude_int32_overflows": 0,
+  "bit_exact_parity_proven": false
+}

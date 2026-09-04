@@ -1,0 +1,478 @@
+{
+  "schema_version": 3,
+  "protocol": "AI_Phase STFT v1 D0/D2/D3 CRC16-CCITT-FALSE",
+  "created_utc": "2026-08-17T00:03:49.017424Z",
+  "gesture_class": "horizontal_slide",
+  "distance": "mid",
+  "angle_degrees": null,
+  "speed": null,
+  "port": "COM7",
+  "baud": 115200,
+  "configured_sampling_rate_hz": 2000.0,
+  "fft_size": 256,
+  "fft_hop": 128,
+  "stft_segments": 15,
+  "clutter_cancel_enabled": false,
+  "columns_captured": 497,
+  "duration_seconds": 32.05593129998306,
+  "target_column_rate_hz": 15.625,
+  "observed_column_rate_hz": 15.587413484159157,
+  "rate_error_percent": -0.2405537013813955,
+  "rate_tolerance_percent": 2.0,
+  "first_column_sequence": 11973,
+  "last_column_sequence": 12469,
+  "first_new_sample_index": 1532544,
+  "last_new_sample_index": 1596032,
+  "parser_statistics": {
+    "bytes_read": 135680,
+    "frames_accepted": 561,
+    "columns_accepted": 497,
+    "rate_frames_accepted": 32,
+    "profile_frames_accepted": 32,
+    "initial_alignment_bytes": 28,
+    "bytes_discarded_after_sync": 0,
+    "invalid_headers": 0,
+    "crc_errors": 0,
+    "invalid_column_packets": 0,
+    "resync_events": 0,
+    "serial_timeouts": 0,
+    "column_sequence_gaps": 0,
+    "missing_columns": 0,
+    "column_sequence_reorders": 0,
+    "sample_index_gaps": 0,
+    "missing_samples": 0,
+    "sample_index_reorders": 0,
+    "rate_sequence_gaps": 0,
+    "rate_sequence_reorders": 0,
+    "profile_sequence_gaps": 0,
+    "profile_sequence_reorders": 0,
+    "first_reported_drop_count": 0,
+    "last_reported_drop_count": 0,
+    "reported_drop_increase": 0
+  },
+  "rate_reports": [
+    {
+      "host_elapsed_seconds": 0.7353287999867462,
+      "report_sequence": 768,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 1.6984599999850616,
+      "report_sequence": 769,
+      "accepted_samples": 1994,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 2.6644281999906525,
+      "report_sequence": 770,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 3.750482900009956,
+      "report_sequence": 771,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 4.713599699956831,
+      "report_sequence": 772,
+      "accepted_samples": 1994,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 5.676807500014547,
+      "report_sequence": 773,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 6.764835899986792,
+      "report_sequence": 774,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 7.7275176999974065,
+      "report_sequence": 775,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 8.691526799986605,
+      "report_sequence": 776,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 9.656576099980157,
+      "report_sequence": 777,
+      "accepted_samples": 1994,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 10.701523699972313,
+      "report_sequence": 778,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 11.706102499971166,
+      "report_sequence": 779,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 12.67110729997512,
+      "report_sequence": 780,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 13.716536899970379,
+      "report_sequence": 781,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 14.681848899985198,
+      "report_sequence": 782,
+      "accepted_samples": 1994,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 15.648441299970727,
+      "report_sequence": 783,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 16.73105740000028,
+      "report_sequence": 784,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 17.693807200004812,
+      "report_sequence": 785,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 18.782010499970056,
+      "report_sequence": 786,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 19.74528149998514,
+      "report_sequence": 787,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 20.708273499971256,
+      "report_sequence": 788,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 21.673466800013557,
+      "report_sequence": 789,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 22.759962100011762,
+      "report_sequence": 790,
+      "accepted_samples": 1994,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 23.722746299987193,
+      "report_sequence": 791,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 24.688722599996254,
+      "report_sequence": 792,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 25.774478500010446,
+      "report_sequence": 793,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 26.737459299969487,
+      "report_sequence": 794,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 27.70103910000762,
+      "report_sequence": 795,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 28.788875599973835,
+      "report_sequence": 796,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 29.751731299969833,
+      "report_sequence": 797,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 30.71583920001285,
+      "report_sequence": 798,
+      "accepted_samples": 1994,
+      "cumulative_drop_count": 0
+    },
+    {
+      "host_elapsed_seconds": 31.680660699959844,
+      "report_sequence": 799,
+      "accepted_samples": 1995,
+      "cumulative_drop_count": 0
+    }
+  ],
+  "profile_reports": [
+    {
+      "host_elapsed_seconds": 0.7353620000067167,
+      "report_sequence": 768,
+      "hop_count": 15,
+      "stft_ticks": 8562,
+      "dma_wait_ticks": 2
+    },
+    {
+      "host_elapsed_seconds": 1.6984834999893792,
+      "report_sequence": 769,
+      "hop_count": 16,
+      "stft_ticks": 9134,
+      "dma_wait_ticks": 2
+    },
+    {
+      "host_elapsed_seconds": 2.664462199958507,
+      "report_sequence": 770,
+      "hop_count": 15,
+      "stft_ticks": 8619,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 3.750522699963767,
+      "report_sequence": 771,
+      "hop_count": 16,
+      "stft_ticks": 9191,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 4.713624399970286,
+      "report_sequence": 772,
+      "hop_count": 16,
+      "stft_ticks": 9185,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 5.676840199972503,
+      "report_sequence": 773,
+      "hop_count": 15,
+      "stft_ticks": 8585,
+      "dma_wait_ticks": 1
+    },
+    {
+      "host_elapsed_seconds": 6.764875299995765,
+      "report_sequence": 774,
+      "hop_count": 16,
+      "stft_ticks": 9158,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 7.727534300007392,
+      "report_sequence": 775,
+      "hop_count": 15,
+      "stft_ticks": 8566,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 8.691562499967404,
+      "report_sequence": 776,
+      "hop_count": 16,
+      "stft_ticks": 9174,
+      "dma_wait_ticks": 1
+    },
+    {
+      "host_elapsed_seconds": 9.656609900004696,
+      "report_sequence": 777,
+      "hop_count": 15,
+      "stft_ticks": 8565,
+      "dma_wait_ticks": 1
+    },
+    {
+      "host_elapsed_seconds": 10.701543600007426,
+      "report_sequence": 778,
+      "hop_count": 16,
+      "stft_ticks": 9162,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 11.70613589999266,
+      "report_sequence": 779,
+      "hop_count": 16,
+      "stft_ticks": 9156,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 12.671142800012603,
+      "report_sequence": 780,
+      "hop_count": 15,
+      "stft_ticks": 8577,
+      "dma_wait_ticks": 1
+    },
+    {
+      "host_elapsed_seconds": 13.71655459998874,
+      "report_sequence": 781,
+      "hop_count": 16,
+      "stft_ticks": 9151,
+      "dma_wait_ticks": 2
+    },
+    {
+      "host_elapsed_seconds": 14.681881800002884,
+      "report_sequence": 782,
+      "hop_count": 15,
+      "stft_ticks": 8564,
+      "dma_wait_ticks": 1
+    },
+    {
+      "host_elapsed_seconds": 15.767535399994813,
+      "report_sequence": 783,
+      "hop_count": 16,
+      "stft_ticks": 9146,
+      "dma_wait_ticks": 2
+    },
+    {
+      "host_elapsed_seconds": 16.7310959000024,
+      "report_sequence": 784,
+      "hop_count": 16,
+      "stft_ticks": 9132,
+      "dma_wait_ticks": 1
+    },
+    {
+      "host_elapsed_seconds": 17.69382389995735,
+      "report_sequence": 785,
+      "hop_count": 15,
+      "stft_ticks": 8580,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 18.782051899994258,
+      "report_sequence": 786,
+      "hop_count": 16,
+      "stft_ticks": 9128,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 19.745328399993014,
+      "report_sequence": 787,
+      "hop_count": 15,
+      "stft_ticks": 8569,
+      "dma_wait_ticks": 1
+    },
+    {
+      "host_elapsed_seconds": 20.708307499997318,
+      "report_sequence": 788,
+      "hop_count": 16,
+      "stft_ticks": 9173,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 21.67350149998674,
+      "report_sequence": 789,
+      "hop_count": 15,
+      "stft_ticks": 8594,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 22.759996199980378,
+      "report_sequence": 790,
+      "hop_count": 16,
+      "stft_ticks": 9140,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 23.722761499986518,
+      "report_sequence": 791,
+      "hop_count": 16,
+      "stft_ticks": 9162,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 24.688764299964532,
+      "report_sequence": 792,
+      "hop_count": 15,
+      "stft_ticks": 8597,
+      "dma_wait_ticks": 1
+    },
+    {
+      "host_elapsed_seconds": 25.774517699959688,
+      "report_sequence": 793,
+      "hop_count": 16,
+      "stft_ticks": 9155,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 26.737494500004686,
+      "report_sequence": 794,
+      "hop_count": 15,
+      "stft_ticks": 8571,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 27.701071799965575,
+      "report_sequence": 795,
+      "hop_count": 16,
+      "stft_ticks": 9154,
+      "dma_wait_ticks": 1
+    },
+    {
+      "host_elapsed_seconds": 28.788894800003618,
+      "report_sequence": 796,
+      "hop_count": 16,
+      "stft_ticks": 9152,
+      "dma_wait_ticks": 2
+    },
+    {
+      "host_elapsed_seconds": 29.75176279997686,
+      "report_sequence": 797,
+      "hop_count": 15,
+      "stft_ticks": 8588,
+      "dma_wait_ticks": 0
+    },
+    {
+      "host_elapsed_seconds": 30.715877200011164,
+      "report_sequence": 798,
+      "hop_count": 16,
+      "stft_ticks": 9226,
+      "dma_wait_ticks": 1
+    },
+    {
+      "host_elapsed_seconds": 31.680690700013656,
+      "report_sequence": 799,
+      "hop_count": 15,
+      "stft_ticks": 8615,
+      "dma_wait_ticks": 1
+    }
+  ],
+  "repeat_markers": [],
+  "host_transport_validation_passed": true,
+  "scientific_sample_continuity_proven": true,
+  "on_chip_vs_python_stft_parity_verified": false,
+  "data_sha256": "be4887aa779956072d7c6db3db75f77cefbf3bde2fd3d1eade1b891e618b5a47"
+}
